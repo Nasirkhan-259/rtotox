@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://TekTravel/HotelBookingApi"><SOAP-ENV:Header><hot:Credentials UserName='ricktest' Password='Ric@49252053'></hot:Credentials></SOAP-ENV:Header><SOAP-ENV:Body><ns1:HotelDetailsRequest><ns1:ResultIndex>6</ns1:ResultIndex><ns1:SessionId>645a0a74-cb85-4bf8-ab4c-7bf35ed3fe1e</ns1:SessionId><ns1:HotelCode>1075091</ns1:HotelCode></ns1:HotelDetailsRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>

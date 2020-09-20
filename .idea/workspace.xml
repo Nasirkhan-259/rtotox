@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f50e2712-7f58-4c56-a6dc-87da88f16c8d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Hotels/HotelController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/MailClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/MailClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/ApiClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/Dictionary.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/Helper/CabinClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/Rsp/FlightDetail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/1ASIWRTORCW_PDT_20190531_131757.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/1ASIWRTORCW_PDT_ServiceBookAndPrice_1.2_4.0.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2011N/AMA_FerryCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2011N/AMA_HotelCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2011N/AMA_PaymentCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2011N/AMA_PricingCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2011N/AMA_VehicleCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2011Q/AMA_RailCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2011V/AMA_TTR_ReservationProductsCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2011Y/AMA_CommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2011Y/chameleon/AMA_CommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2011Y/chameleon/AMA_SimpleTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2012B/AMA_AppMdw_CommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2012B/AMA_AppMdw_CommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2012B/AMA_SecurityHostedUser.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2012B/AMA_WS_Session.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2012F/AMA_CommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2012V/AMA_SecurityCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2013T/AMA_AirCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2014F/AMA_Ticket_PayIssueCommonType_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2014S/AMA_ETR_CommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2014S/AMA_PNR_CommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2014S/AMA_PricingCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2014S/AMA_QuotationCommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2014S/AMA_Service_BookPriceProductRQ.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2014S/AMA_Service_BookPriceProductRS.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2015K/AMA_ServiceBookPriceServiceRQ.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA/2015K/AMA_ServiceBookPriceServiceRS.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/AMA_WSLink.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Air_FlightInfoReply_07_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Air_FlightInfo_07_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Air_RetrieveSeatMapReply_17_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Air_RetrieveSeatMap_17_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Air_SellFromRecommendationReply_05_2_IA.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Air_SellFromRecommendation_05_2_IA.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Command_CrypticReply_07_3_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Command_Cryptic_07_3_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/DocIssuance_IssueCombinedReply_15_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/DocIssuance_IssueCombined_15_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/DocIssuance_IssueMiscellaneousDocumentsReply_15_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/DocIssuance_IssueMiscellaneousDocuments_15_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/DocIssuance_IssueTicketReply_15_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/DocIssuance_IssueTicket_15_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/FOP_CreateFormOfPaymentReply_15_4_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/FOP_CreateFormOfPayment_15_4_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_CheckRulesReply_07_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_CheckRules_07_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_GetFareFamilyDescriptionReply_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_GetFareFamilyDescription_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_GetFareRulesReply_10_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_GetFareRules_10_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_InformativeBestPricingWithoutPNRReply_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_InformativeBestPricingWithoutPNR_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_InformativePricingWithoutPNRReply_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_InformativePricingWithoutPNR_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_MasterPricerCalendarReply_16_3_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_MasterPricerCalendar_16_3_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_MasterPricerTravelBoardSearchReply_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_MasterPricerTravelBoardSearch_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_PricePNRWithBookingClassReply_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_PricePNRWithBookingClass_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_PricePNRWithLowerFaresReply_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_PricePNRWithLowerFares_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_PriceUpsellPNRReply_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_PriceUpsellPNR_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_PriceUpsellWithoutPNRReply_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_PriceUpsellWithoutPNR_18_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_RebookAndCreateTSTReply_13_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Fare_RebookAndCreateTST_13_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/IATA/2010.1/IATA_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/IATA/2010.1/chameleon/IATA_CommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/IATA/2010.1/chameleon/IATA_SimpleTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/MiniRule_GetFromPricingReply_11_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/MiniRule_GetFromPricing_11_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/OTA/2010B/OTA_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/OTA/2010B/OTA_SimpleTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/OTA/2010B/OTA_SimpleTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/OTA/2010B/chameleon/OTA_CommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/OTA/2010B/chameleon/OTA_SimpleTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/OTA/2011A/OTA_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/PNR_AddMultiElements_17_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/PNR_Cancel_17_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/PNR_List_00_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/PNR_Reply_17_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/PNR_RetrieveAndDisplayReply_10_2_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/PNR_RetrieveAndDisplay_10_2_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/PNR_Retrieve_17_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Queue_PlacePNRReply_03_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Queue_PlacePNR_03_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Security_SignOutReply_04_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Security_SignOut_04_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/ServiceBookAndPrice_1.2.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Service_IntegratedCatalogueReply_16_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Service_IntegratedCatalogue_16_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Service_StandaloneCatalogueReply_16_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Service_StandaloneCatalogue_16_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Ticket_CancelDocumentReply_11_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Ticket_CancelDocument_11_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Ticket_CreateTSTFromPricingReply_04_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Flight/wsdl/1ASIWRTORCW_PDT_20190531_131757/Ticket_CreateTSTFromPricing_04_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/Array2XML.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/Client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/Req/Hotel_Sell.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/Res/Hotel_Sell.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/XML2Array.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/price.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/1ASIWLIVXE1_PDT_20190207_092753.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/1ASIWLIVXE1_PDT_HotelAvailability_2.0_4.0.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/1ASIWLIVXE1_PDT_HotelContent_1.0_4.0.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/AMA/2011Y/AMA_CommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/AMA/2011Y/chameleon/AMA_CommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/AMA/2011Y/chameleon/AMA_SimpleTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/AMA/2012B/AMA_AppMdw_CommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/AMA/2012B/AMA_AppMdw_CommonTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/AMA/2012B/AMA_SecurityHostedUser.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/AMA/2012B/AMA_WS_Session.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/AMA_WSLink.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/HotelAvailability_2.0.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/HotelContent_1.0.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/Hotel_SellReply_17_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/Hotel_Sell_17_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/IATA/2010.1/IATA_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/IATA/2010.1/chameleon/IATA_CommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/IATA/2010.1/chameleon/IATA_SimpleTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/OTA_HotelDescriptiveInfoRQ.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/OTA_HotelDescriptiveInfoRS.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/OTA_NotifReportRQ.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/OTA_NotifReportRS.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/chameleon/OTA_AirCommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/chameleon/OTA_AirPreferences.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/chameleon/OTA_CommonPrefs.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/chameleon/OTA_CommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/chameleon/OTA_HotelCommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/chameleon/OTA_HotelContentDescription.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/chameleon/OTA_HotelPreferences.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/chameleon/OTA_Profile.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/chameleon/OTA_SimpleTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2007A/chameleon/OTA_VehicleCommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2010B/OTA_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2010B/OTA_SimpleTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2010B/OTA_SimpleTypes_Proxy.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2010B/chameleon/OTA_CommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2010B/chameleon/OTA_SimpleTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/OTA_HotelAvailRQ.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/OTA_HotelAvailRS.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_AirCommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_AirPreferences.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_CommonPrefs.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_CommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_HotelCommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_HotelPreferences.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_HotelReservation.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_Profile.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_RailCommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_RailPreferences.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_SimpleTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/OTA/2011B/chameleon/OTA_VehicleCommonTypes.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/PNR_AddMultiElements_15_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/PNR_Cancel_15_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/PNR_List_00_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/PNR_Reply_15_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/1ASIWLIVXE1_PDT_20190207_092753/PNR_Retrieve_15_1_1A.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Hotel SOAP 4.0/Hotel WBS_WORKFLOWS.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Hotel SOAP 4.0/WBS Hotel Implementation Guide.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Hotel SOAP 4.0/Web Services Embedded Security_130523-065751.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Sample - SOAP 4 -amdeus api/1. Hotel_MultiSingleAvailablity - General Search.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Sample - SOAP 4 -amdeus api/2. Hotel Descriptive Info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Sample - SOAP 4 -amdeus api/3. Hotel_MultiSingleAvailablity - Hotel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Sample - SOAP 4 -amdeus api/4. Hotel_Enhanced Pricing.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Sample - SOAP 4 -amdeus api/5. PNR_AddMultiElement (0).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Sample - SOAP 4 -amdeus api/6. Hotel Sell.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Sample - SOAP 4 -amdeus api/7. PNR_AddMultiElement (10).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Amadeus/Hotel/wsdl/Sample - SOAP 4 -amdeus api/8.PNR_Retrieve.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/StaticContent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/TBOSOAPClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/TboLibrary.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/config/Config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AOTNumbers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/APIBookingDetail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/APIHotelBookingStatus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/APIHotelDetails.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AccountBalance.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AccountInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AddressInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AgencyDetails.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendActionReq.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendActionRes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendGuestReq.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendGuestRes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendInformation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendmentDetails.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendmentRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendmentRequestType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendmentRequested.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendmentResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AmendmentType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ApprovalInformation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfCityList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfCountryList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfDayRate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfGuest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfHotel_Result.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfHotel_ResultWithRooms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfHotel_Room.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfHotels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfInt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfRequestedRooms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfRoomDetails.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfRoomGuest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfRoomInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfRoomPriceRes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfRoomReq.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfRoomRes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfSpecialRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfString.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfString1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfString2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfString3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfString4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfString5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfString6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfString7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfSuppInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfSupp_info.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ArrayOfSupplement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AuthenticationData.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AvailabilityAndPricingRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/AvailabilityAndPricingResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/BookingOptions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CancelPolicies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CancelPolicy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CancelRequestType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CancellationChargeTypeForHotel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CheckInReq.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CheckInRes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CheckOutReq.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CheckOutRes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CityList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CountryList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CountryListRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/CountryListResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/DateActionRes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/DayRate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/DestinationCityListRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/DestinationCityListResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/Filters.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/GenerateInvoiceRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/GenerateInvoiceResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/Guest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/GuestType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelBookRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelBookResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelBookingDetailRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelBookingDetailResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelCancelRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelCancelResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelCancelStatus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelCancellationPolicies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelCancellationPolicyRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelCancellationPolicyResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelCodesRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelCodesResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelDetailsRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelDetailsResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelDetailsVerification.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelDetailsVerificationStatus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelInfoHotelRating.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelRatingInput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelRoomAvailabilityRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelRoomAvailabilityResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelSearchRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelSearchResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelSearchWithRoomsRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelSearchWithRoomsResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/HotelService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/Hotel_Result.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/Hotel_ResultWithRooms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/Hotel_Room.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/Hotels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/MinHotelPrice.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/OrderByFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/PaymentInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/PaymentModeType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/PolicyFormat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/PriceChange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/PriceVerification.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/PriceVerificationStatus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/Rate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RequestStatus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RequestedRooms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/ResponseStatus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RoomCombination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RoomDetails.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RoomGuest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RoomInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RoomInformation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RoomPriceRes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RoomRate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RoomReq.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RoomRequested.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/RoomRes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/SpecialRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/SupmtChargeType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/SuppChargeType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/SuppInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/Supp_info.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/Supplement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/SupplementType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/TopDestinationsRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/TopDestinationsResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/TotalPrice.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/webservice/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TBO/wsdl/hotelservice.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/FlightListingComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/SearchFormComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/flight/booking_form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/flight/checkout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/flight/listing.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/flight/unknown.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hotels/details.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hotels/listing.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Y8CUYEPjyJlfqdgzsZzwzrKkd6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f50e2712-7f58-4c56-a6dc-87da88f16c8d" name="Default Changelist" comment="" />
+      <created>1582314851010</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582314851010</updated>
+      <workItem from="1582314852585" duration="461000" />
+      <workItem from="1583668573361" duration="938000" />
+      <workItem from="1584379856771" duration="27000" />
+      <workItem from="1584706526326" duration="5272000" />
+      <workItem from="1585315959571" duration="7215000" />
+      <workItem from="1585418241973" duration="2398000" />
+      <workItem from="1587140650777" duration="629000" />
+      <workItem from="1587179155795" duration="122000" />
+      <workItem from="1588326285450" duration="665000" />
+      <workItem from="1588336017759" duration="5537000" />
+      <workItem from="1589636010209" duration="1633000" />
+      <workItem from="1589682897974" duration="1186000" />
+      <workItem from="1596988222600" duration="1227000" />
+      <workItem from="1597124513669" duration="1047000" />
+      <workItem from="1597250904673" duration="530000" />
+      <workItem from="1597294013712" duration="3256000" />
+      <workItem from="1599404650642" duration="552000" />
+      <workItem from="1599451073129" duration="2722000" />
+      <workItem from="1599625864951" duration="582000" />
+      <workItem from="1599675052078" duration="439000" />
+      <workItem from="1599713685778" duration="339000" />
+      <workItem from="1600266417294" duration="522000" />
+      <workItem from="1600594322196" duration="2013000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="514" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1599675137604">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="514" y="163" key="#com.intellij.ide.util.MemberChooser/0.23.1440.797@0.23.1440.797" timestamp="1599675137604" />
+    <state x="397" y="204" width="584" height="474" key="find.popup" timestamp="1599404870104">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="397" y="204" width="584" height="474" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1599404870104" />
+    <state x="366" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1600266422028">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="366" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1600266422028" />
+  </component>
+</project>

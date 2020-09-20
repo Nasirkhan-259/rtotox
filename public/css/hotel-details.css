@@ -1,0 +1,4555 @@
+body {
+  background-color: rgb(252, 252, 252);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+/* main-header */
+
+.main-header {
+  background-image: url(../img/header-image.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.exchange-result {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #333;
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 1.2;
+  position: absolute;
+  right: 72px;
+  top: 31px;
+}
+.exchange-result .exchange-icon {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color: rgb(242, 80, 51);
+  font-size: 12px;
+}
+.one-way-tour,
+.two-way-tour,
+.multi-city-tour {
+  display: none;
+}
+.one-way-tour.fade-in,
+.two-way-tour.fade-in,
+.multi-city-tour.fade-in {
+  display: block;
+}
+.main-header .flight-tab,
+.main-header .hotel-tab,
+.main-header .holiday-tab {
+  padding: 13px 40px;
+  margin-right: 1px;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 4px 4px 0px 0px;
+  cursor: pointer;
+  background-color: rgba(216, 213, 213, 0.8);
+}
+.main-header .tab-content {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.flight-orign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 46px;
+  border-radius: 4px 4px 0px 0px;
+  overflow: hidden;
+  padding: 0px 10px;
+  background: #fff;
+  margin-bottom: 1px;
+}
+.main-header .search-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 46px;
+  border-radius: 4px 4px 4px 4px;
+  overflow: hidden;
+  padding: 0px 10px;
+  background: #fff;
+  margin-bottom: 1px;
+}
+.flight-orign svg,
+.flight-destination svg,
+.search-hotel svg {
+  width: 17px;
+  height: 17px;
+  color: rgb(158, 158, 158);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.flight-orign input,
+.flight-destination input,
+.search-hotel input {
+  color: rgb(66, 66, 66);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 0px 30px 0px 10px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: inherit;
+}
+.flight-orign input:focus,
+.flight-destination input:focus,
+.search-hotel input:focus {
+  outline: none;
+}
+.flight-destination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 46px;
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  padding: 0px 10px;
+  background: #fff;
+}
+.flight-date-picker {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: rgb(66, 66, 66);
+}
+.flight-date-picker > div:first-child {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: -1px;
+  cursor: pointer;
+  height: 93px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  background: white;
+  border-bottom: 1px solid white;
+  overflow: hidden;
+}
+.flight-date-picker > div:first-child svg {
+  position: absolute;
+  color: rgb(66, 66, 66);
+  left: 10px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+}
+.flight-date-picker .spacer,
+.datepickerhotel .spacer {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: transparent;
+}
+.flight-date-picker > div:last-child {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: -1px;
+  cursor: pointer;
+  height: 93px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  background: white;
+  border-bottom: 1px solid white;
+  overflow: hidden;
+}
+.flight-date-picker .date-picker-to .date-second {
+  position: absolute;
+  color: rgb(66, 66, 66);
+  left: 10px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+}
+.flight-date-picker .date-picker-to .hide-return {
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  color: rgb(54, 101, 172);
+  width: 28px;
+  height: 28px;
+}
+.select-class {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 1px;
+  color: rgb(66, 66, 66);
+  border-radius: 4px 4px 0px 0px;
+  padding: 12px 15px;
+  background: white;
+}
+.select-class-drop,
+.select-passnger-drop {
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 100%;
+  z-index: 152;
+  margin-top: 2px;
+  color: rgb(66, 66, 66);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  border-radius: 4px;
+  background: white;
+  padding: 0px;
+  overflow: hidden;
+  left: 0;
+  display: none;
+}
+.select-class-drop.active,
+.select-passnger-drop.active {
+  display: block;
+}
+.select-class-drop li:hover {
+  color: white;
+  background: rgb(66, 66, 66);
+}
+.select-class svg,
+.select-pessanger svg {
+  width: 13px;
+  height: 13px;
+}
+.select-class span,
+.select-pessanger span {
+  font-size: 15px;
+  color: rgb(66, 66, 66);
+}
+.select-pessanger {
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: rgb(66, 66, 66);
+  border-radius: 0px 0px 4px 4px;
+  padding: 12px 15px;
+  background: white;
+}
+
+.btn-search-md {
+  width: 100%;
+  height: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 15px 0px 0px;
+  color: white;
+  -webkit-box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+  box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+  background: rgb(231, 65, 42);
+  border-style: none;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+}
+.btn-search-md svg {
+  width: 30px;
+  height: 30px;
+  margin: -5px auto 0px;
+}
+.btn-search-md span {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.btn-search-md:hover,
+.btn-search-sm:hover {
+  color: #fff;
+  background-color: rgb(242, 80, 51);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+}
+.btn-search-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+  box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+  background: rgb(231, 65, 42);
+  border-width: initial;
+  border-style: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .btn-search-sm {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 100%;
+    padding: 10px 0px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 4px;
+  }
+  .hotel-search-to{
+    max-width:100% !important;
+    margin-right: 0 !important;
+    border-style: none none solid !important;
+
+  }
+  .hotel-search-from{
+    margin-left: 0 !important;
+    max-width: 100% !important;
+  }
+  .hotel-search-city{
+    border-style: none none solid !important;
+  }
+  .hotel-search-room-adult{
+    border-style: none none solid !important;
+  }
+}
+.btn-search-sm svg {
+  width: 30px;
+  height: 30px;
+}
+.main-header .datepickerhotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.main-header .hotel-check-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgb(117, 117, 117);
+  font-size: 14px;
+  position: relative;
+  padding-left: 12px;
+  height: 45px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  background: white;
+}
+.main-header .hotel-check-in svg,
+.main-header .hotel-check-out svg {
+  position: absolute;
+  color: rgb(66, 66, 66);
+  left: 5px;
+  top: 13px;
+  width: 17px;
+  height: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  fill: currentcolor;
+}
+.main-header .hotel-check-out {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgb(117, 117, 117);
+  font-size: 14px;
+  position: relative;
+  padding-left: 12px;
+  height: 45px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  background: white;
+}
+.main-header .hotel-select-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: relative;
+  height: 45px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0px 15px;
+}
+.main-header .hotel-select-person span {
+  display: inline-block;
+  line-height: 1.6em;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.main-header .hotel-select-person > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgb(66, 66, 66);
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+.main-header .hotel-select {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-appearance: menulist-button;
+}
+
+#flight-data .flight-tour {
+  background: transparent;
+  border-radius: 4px;
+  padding: 10px 12px;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#flight-data .flight-tour.show {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 10px 12px;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.main-header li.active {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: bold;
+}
+.modify {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+.modify-search {
+  position: absolute;
+  z-index: 14;
+  width: 135%;
+  left: -36%;
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0px;
+  padding: 20px;
+  border-radius: 2px;
+  display: none;
+}
+.serach-modify-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+.btn-search-modify-cancel {
+  color: white;
+  font-size: 14px;
+  background: none;
+  padding: 4px 60px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  -o-border-image: initial;
+  border-image: initial;
+}
+.btn-search-modify-cancel:focus {
+  outline: none;
+}
+.btn-search-modify-cancel:hover {
+  background: rgb(58, 58, 58);
+}
+.btn-search-modify-cancel:active {
+  border-color: rgb(231, 65, 42);
+  background: rgb(231, 65, 42);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+}
+.modify-back {
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -13;
+  background: black;
+}
+.search-region p,
+.search-dest p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.search-region {
+  margin-right: 40px;
+}
+.search-dest {
+  margin-left: 40px;
+  padding-right: 40px;
+  border-right: 1px solid #eee;
+}
+.modify-depart span,
+.modify-return span,
+.modify-pass span,
+.modify-cabin span {
+  font-size: 12px;
+  color: rgb(169, 169, 169);
+}
+.modify-depart {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.modify-depart p,
+.modify-return p,
+.modify-pass p,
+.modify-cabin p {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin: 10px 0;
+}
+.filter-result {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.filter-result .btn-depart-data {
+  position: absolute;
+  top: 86px;
+  left: 0px;
+  min-width: 232px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+  background-color: white;
+  z-index: 10;
+  border-radius: 8px;
+  padding: 15px;
+  display: none;
+}
+.filter-result .btn-depart-data .btn-rest,
+.filter-result .btn-depart-data .btn-done,
+.filter-result .data-cheapest .btn-done {
+  color: #d32f2f;
+  cursor: pointer;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  background: none;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  #hotel-data .row :nth-child(2) {
+    margin: 10px 0;
+  }
+}
+
+.filter-result .btn-depart-data .label-depart-data {
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding-left: 7px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+#hotel-data {
+  padding: 52px 0px 54px;
+}
+#hotel-data,
+#flight-data {
+  display: none;
+}
+#hotel-data.active,
+#flight-data.active {
+  display: block;
+}
+.filter-result .btn-direct .icon-disable {
+  color: #fff;
+  margin-left: 10px;
+  display: none;
+  margin-bottom: 2px;
+}
+.filter-result .btn-depart-data .label-depart-data {
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding-left: 7px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+.filter-result .data-cheapest {
+  position: absolute;
+  top: 20px;
+  margin-top: 5px;
+  right: 0px;
+  min-width: 160px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+  background-color: white;
+  z-index: 10;
+  border-radius: 8px;
+  padding: 15px;
+  display: none;
+}
+.filter-result .data-cheapest .cheapest label,
+.filter-result .data-cheapest .shortest label {
+  color: rgb(58, 58, 58);
+  padding-left: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+.filter-result .btn-depart-data .label-depart-data:hover {
+  color: #d32f2f;
+}
+.filter-result .btn-depart-data .label-depart-data:not(:last-child) {
+  margin-bottom: 10px;
+}
+.modify-pass {
+  padding-left: 40px;
+}
+@media screen and (max-width: 768px) {
+  .search-dest {
+    border: none;
+  }
+  .btn-modify {
+    width: 200px;
+    margin-right: auto;
+  }
+
+  .search-region {
+    margin-left: 40px;
+  }
+  .modify .col-md-6 {
+    margin: 15px 0;
+  }
+  .marginY-sm-10 {
+    margin: 10px 0;
+  }
+}
+.modify-cabin {
+  padding-left: 40px;
+}
+
+.btn-modify {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#d32f2f), to(#d32f2f)) #d32f2f;
+  background: linear-gradient(to right, #d32f2f, #d32f2f) #d32f2f;
+  border-color: #d32f2f;
+  margin-left: auto;
+  height: 35px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-weight: 600;
+  padding: 0px 9px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.btn-modify:active {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+.btn-modify:focus {
+  outline: none;
+}
+.filter-result .btn-direct,
+.filter-result .btn-depart {
+  color: rgb(58, 58, 58);
+  background: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -webkit-appearance: button;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.filter-result .btn-direct:focus {
+  background: -webkit-gradient(linear, left top, right top, from(#d32f2f), to(#d32f2f)) #d32f2f;
+  background: linear-gradient(to right, #d32f2f, #d32f2f) #d32f2f;
+}
+.filter-result .btn-direct:active,
+.filter-result .btn-depart:active {
+  background: -webkit-gradient(linear, left top, right top, from(#d32f2f), to(#d32f2f)) #d32f2f;
+  background: linear-gradient(to right, #d32f2f, #d32f2f) #d32f2f;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0px;
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+.filter-result .btn-depart .fa-angle-down {
+  -webkit-transform: translateY(1.2px);
+  transform: translateY(1.2px);
+  color: #d32f2f;
+}
+.filter-result p {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(58, 58, 58);
+  margin-bottom: 10px;
+}
+.filter-result .fa-exchange-alt {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.filter-result .sort {
+  margin-right: 3px;
+  font-size: 14px;
+  color: rgb(58, 58, 58);
+}
+.filter-result .btn-empty {
+  cursor: pointer;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: none;
+  border: none;
+  color: #d32f2f;
+  font: 600 14px system-ui;
+}
+.filter-result button:focus {
+  outline: none;
+}
+.filght-detail {
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.flight-segment {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flight-segment:first-child {
+  border: none !important;
+}
+.filght-detail .row {
+  margin: 0;
+}
+.flight-img-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.flight-img-name .flight-name,
+.flight-img-name .flight-code {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(58, 58, 58);
+}
+.depart-time,
+.arival-time {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  color: rgb(58, 58, 58);
+  margin-bottom: 5px;
+  line-height: 18px;
+}
+.flight-duration .text-direct {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(29, 172, 8);
+}
+.flight-duration {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.line-dashed {
+  border-top: 1px dashed rgb(223, 223, 223);
+  height: 0;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.flight-duration .flight-duration-time {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(119, 119, 119);
+  margin-top: 12px;
+}
+.plane {
+  position: absolute;
+  right: -14px;
+  top: 14px;
+}
+.plane svg {
+  width: 16px;
+  color: rgb(223, 223, 223);
+}
+.flight-bag {
+  position: relative;
+}
+.flight-bag a,
+.flight-bag span svg {
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #d32f2f;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.flight-bag a:hover {
+  text-decoration: none;
+}
+.baggage-inc {
+  font-size: 10px;
+  color: rgb(58, 58, 58);
+  font-weight: 400;
+  background: white;
+  border-radius: 9px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 1px 4px;
+  width: 114px;
+}
+.baggage-inc span svg {
+  width: 11px;
+  height: 11px;
+  margin-right: 2px;
+  color: rgb(29, 172, 8);
+  vertical-align: middle;
+  margin-bottom: 1px;
+}
+.select-flight {
+  border-left: 1px dashed rgb(204, 204, 204);
+  padding: 20px 0 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .select-flight {
+    border-left: none;
+  }
+  .flight-bag {
+    padding-left: 15px;
+  }
+  .btn-depart,
+  .btn-direct {
+    font-size: 8px !important;
+    margin-bottom: 0 !important;
+  }
+  .filter-result .fa-exchange-alt,
+  .btn-cheapest,
+  .ShowMoreButton,
+  .filter-result .sort {
+    font-size: 10px !important;
+  }
+}
+.select-flight .cur {
+  margin-bottom: -9px;
+  margin-right: 1px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.select-flight .price {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 25px;
+  padding: 5px 0px 5px;
+}
+.select-flight button span svg,
+.flight-detail-bottom button span svg {
+  margin-left: 9px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.btn-select {
+  color: white;
+  -webkit-box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+  box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+  background: rgb(231, 65, 42);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 600;
+  line-height: 1.43;
+  letter-spacing: normal;
+  border-radius: 2px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 8px 12px;
+}
+.btn-select:hover {
+  background-color: rgb(242, 80, 51);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+}
+.btn-select:focus {
+  outline: none;
+}
+.btn-select:active {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.filght-detail > .row > .col-md-4 {
+  padding-left: 0;
+}
+
+.flight-detail {
+  display: none;
+  border-left: 1px solid rgb(204, 204, 204);
+  border-right: 1px solid rgb(204, 204, 204);
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+.flight-detail .flight-detail-top {
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+  background-color: rgb(242, 242, 242);
+}
+.flight-detail .btn-flight-detail.active {
+  margin-right: 13px;
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-width: initial;
+  border-style: initial;
+  border-color: #d32f2f;
+  -o-border-image: initial;
+  border-image: initial;
+  background: #d32f2f;
+  outline: none;
+  color: white;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.flight-detail .btn-flight-detail {
+  color: rgb(58, 58, 58);
+  margin-right: 13px;
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  background: none;
+  outline: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.flight-detail .btn-flight-detail:active {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+  color: #000;
+  border-color: #d32f2f;
+  background: #d32f2f;
+}
+.flight-detail-btn:active {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+@media screen and (max-width: 500px) {
+  .btn-flight-detail {
+    font-size: 9px !important;
+  }
+  .FlightSearchResult .depart span {
+    font-size: 12px !important;
+  }
+  .FlightSearchResult .depart {
+    font-size: 12px !important;
+  }
+}
+.ShowMoreButton {
+  min-width: 100px;
+  position: relative;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(54, 101, 172);
+  display: block;
+  cursor: pointer;
+  margin: 0px auto;
+  background: white;
+  padding: 2px 18px;
+  border-width: 1px 1px 1px;
+  border-style: none solid solid;
+  border-color: rgb(236, 236, 236) rgb(236, 236, 236) rgb(236, 236, 236);
+  -o-border-image: initial;
+  border-image: initial;
+  -webkit-transition: width 0.2s ease-in-out 0s;
+  transition: width 0.2s ease-in-out 0s;
+  border-top: none;
+  outline: none;
+}
+.ShowMoreButton:focus {
+  outline: none;
+}
+.fhKRnQ {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-bottom: 12px solid transparent;
+  left: -6px;
+  top: -1px;
+  border-right: 8px solid rgb(236, 236, 236);
+}
+.fhKRnQ div {
+  left: 2px;
+  top: 1px;
+  border-right: 8px solid white;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-bottom: 12px solid transparent;
+}
+
+.koPXNF,
+.koPXNF > div {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-bottom: 12px solid transparent;
+}
+.koPXNF {
+  right: -6px;
+  top: -1px;
+  border-left: 8px solid rgb(236, 236, 236);
+}
+.FlightSearchResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgb(228, 232, 237);
+}
+.koPXNF div {
+  right: 2px;
+  top: 1px;
+  border-left: 8px solid white;
+}
+.FlightSearchResult .depart svg {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 15px;
+}
+.FlightSearchResult .depart span {
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(58, 58, 58);
+  font-weight: bold;
+}
+.FlightSearchResult .durantion-time {
+  padding-left: 3px;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(58, 58, 58);
+}
+.FlightSearchResult .durantion-time span {
+  font-weight: bold;
+}
+#Flight-itinerary,
+#Baggage-info,
+#Fare-rules {
+  display: none;
+}
+#Flight-itinerary.active {
+  display: block;
+}
+.flight-detail .aircraft-det {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.aircraft-det div {
+  font-size: 12px;
+  font-weight: normal;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.flight-detail .Flight-itinerary-orign span,
+.flight-detail .Flight-itinerary-dest span {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.flight-detail .Flight-itinerary-orign-airp {
+  font-weight: 600 !important;
+  font-size: 12px;
+  font-weight: normal;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.flight-detail .Flight-itinerary-orign p,
+.flight-detail .Flight-itinerary-dest p {
+  font-size: 12px;
+}
+.flight-detail .Flight-itinerary-orign,
+.flight-detail .Flight-itinerary-dest {
+  padding-right: 25px;
+}
+.flight-detail .Flight-itinerary-dur span {
+  color: rgb(58, 58, 58);
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  text-align: right;
+}
+.flight-detail .waiting-time {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  z-index: 1;
+  background-color: rgb(255, 245, 227);
+  padding: 7px 15px;
+}
+.flight-detail .waiting-time svg {
+  margin-right: 10px;
+}
+.flight-detail-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 1px solid rgb(228, 232, 237);
+  padding: 15px;
+}
+.flight-detail-bottom .btn-hide-detail,
+.flight-detail-bottom .modal-hide {
+  min-width: 197px;
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 600;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d32f2f;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d32f2f;
+  -o-border-image: initial;
+  border-image: initial;
+  background: rgb(255, 255, 255);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 8px 12px;
+}
+.flight-detail-bottom .btn-hide-detail:focus,
+.flight-detail-bottom .modal-hide:focus {
+  outline: none;
+}
+.flight-detail-bottom .btn-hide-detail:hover,
+.flight-detail-bottom .modal-hide:hover {
+  color: #d32f2f;
+  background-color: rgb(245, 245, 245);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d32f2f;
+  -o-border-image: initial;
+  border-image: initial;
+}
+.flight-detail-bottom .btn-hide-detail:active,
+.flight-detail-bottom .modal-hide:active {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+#Baggage-info .baggage-origin-dest {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  margin-bottom: 10px;
+}
+.cabin-baggage,
+.checked-baggage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.cabin-baggage .baggage-for,
+.checked-baggage .baggage-for {
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(58, 58, 58);
+}
+.cabin-baggage .max-baggage,
+.checked-baggage .max-baggage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.cabin-baggage .max-baggage .wait,
+.checked-baggage .max-baggage .wait {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin-right: 10px;
+}
+.cabin-baggage .max-baggage .freetag,
+.checked-baggage .max-baggage .freetag {
+  background-color: rgb(96, 165, 86);
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  border-radius: 2px;
+  padding: 0px 4px;
+}
+.fare-summary {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.fare-summary .fare-total {
+  padding-right: 73px;
+  min-height: 382px;
+  border-right: 1px solid rgb(228, 232, 237);
+}
+.fare-summary .fare-total .fare-heading {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+}
+.fare-summary .fare-total .fare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(58, 58, 58);
+  margin-bottom: 10px;
+}
+.fare-summary .fare-total .tax-fees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(58, 58, 58);
+  margin-bottom: 10px;
+}
+.fare-summary .fare-total .vat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(58, 58, 58);
+  margin-bottom: 10px;
+}
+.fare-summary .fare-total .total-fare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: rgb(58, 58, 58);
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(228, 232, 237);
+}
+.cancelation {
+  padding-left: 15px;
+}
+.fare-summary .cancelation .cancel-caharge {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+}
+.fare-summary .cancelation .cancel-detail {
+  background-color: rgb(248, 248, 248);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  line-height: 1.54;
+  padding: 10px 15px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(229, 229, 229);
+  -o-border-image: initial;
+  border-image: initial;
+}
+.fare-summary .cancelation .cancel-detail .cancel-phone,
+.fare-summary .cancelation .cancel-detail .cancel-mail {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  color: #d32f2f;
+}
+/*****************
+        filter
+ ****************** */
+.filter .filter-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(58, 58, 58);
+  padding-bottom: 11px;
+  padding-top: 27px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+.filter .filter-box-heading .price,
+.filter .filter-box-heading .stop,
+.filter .filter-box-heading .out-in,
+.filter .filter-box-heading .airports {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+}
+.filter .filter-rest {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#d32f2f), to(#d32f2f)) #d32f2f;
+  background: linear-gradient(to right, #d32f2f, #d32f2f) #d32f2f;
+  border-color: #d32f2f;
+  margin-right: 10px;
+  font-size: 12px;
+  padding: 0px 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 600;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  cursor: pointer;
+}
+.filter svg {
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #d32f2f;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.filter .filter-box-content {
+  padding-top: 19px;
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+.filter .filter-box-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.filter .price-range .price-scale {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: -webkit-gradient(
+          linear,
+          left top, right top,
+          from(#d32f2f),
+          color-stop(100%, #d32f2f),
+          color-stop(100%, rgb(234, 234, 234)),
+          to(rgb(234, 234, 234))
+  );
+  background: linear-gradient(
+          to right,
+          #d32f2f 0%,
+          #d32f2f 100%,
+          rgb(234, 234, 234) 100%,
+          rgb(234, 234, 234) 100%
+  );
+}
+
+.filter .price-range {
+  margin-top: 15px;
+  margin-bottom: 19px;
+}
+.filter .price-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(119, 119, 119);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.filter .filter-box-content .direct-stop {
+  margin-top: 15px;
+  margin-bottom: 19px;
+}
+.filter .filter-box-content .direct-stop label {
+  padding-left: 5px;
+}
+.filter .filter-box-content .out-in-box {
+  margin-top: 15px;
+  margin-bottom: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.filter .filter-box-content .out-in-box .out-in-element {
+  width: 25%;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 2px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 1;
+  color: #d32f2f;
+}
+.filter .filter-box-content .out-in-box .out-in-element .icon-out-in {
+  width: 16px;
+  margin-bottom: 11px;
+}
+.filter .filter-box-content .filter-airport,
+.filter .filter-box-content .filter-airline {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin-bottom: 10px;
+  margin-top: 15px;
+  text-align: left;
+}
+.filter .filter-box-content .filter-airport .filter-airport-check,
+.filter .filter-box-content .filter-airline .filter-airline-check {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.filter .filter-box-content .filter-airport .filter-airport-check label,
+.filter .filter-box-content .filter-airline .filter-airline-check label {
+  cursor: pointer;
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 12px;
+  color: rgb(58, 58, 58);
+  margin-bottom: 0px;
+  float: right;
+  width: 90%;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type="checkbox"],
+  input[type="radio"] {
+    --active: #d32f2f;
+    --active-inner: #fff;
+    --input-border: #cdd9ed;
+    --input-border-hover: #23c4f8;
+    --background: #fff;
+    --disabled: #f5f9ff;
+    --disabled-inner: #e4ecfa;
+    --shadow-inner: rgba(18, 22, 33, 0.1);
+    position: relative;
+    height: 18px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    border: 1px solid var(--input-border);
+    background: var(--background);
+    -webkit-transition: background 0.3s ease, border-color 0.3s ease;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+  input[type="checkbox"]:after,
+  input[type="radio"]:after {
+    content: "";
+    display: block;
+    top: -1.5156px;
+    left: -1.5156px;
+    position: absolute;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+    -webkit-filter 0.3s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+    -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+  }
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    background: var(--active);
+    border-color: var(--active);
+  }
+  input[type="checkbox"]:checked:after,
+  input[type="radio"]:checked:after {
+    -webkit-filter: drop-shadow(0 1px 2px var(--shadow-inner));
+    filter: drop-shadow(0 1px 2px var(--shadow-inner));
+    -webkit-transition: opacity 0.3s ease, -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2), -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    transition: opacity 0.3s ease, filter 0.3s ease,
+    transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+    -webkit-filter 0.3s ease,
+    -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+  }
+  input[type="checkbox"]:disabled,
+  input[type="radio"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
+    background: var(--disabled);
+  }
+
+  input[type="checkbox"]:not(.switch),
+  input[type="radio"]:not(.switch) {
+    width: 18px;
+    top: 5px;
+  }
+  input[type="checkbox"]:not(.switch):after,
+  input[type="radio"]:not(.switch):after {
+    opacity: 0;
+  }
+  input[type="checkbox"]:not(.switch):checked:after,
+  input[type="radio"]:not(.switch):checked:after {
+    opacity: 1;
+  }
+
+  input[type="checkbox"]:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 6px;
+    top: 2px;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  input[type="checkbox"]:not(.switch):checked:after {
+    -webkit-transform: rotate(43deg);
+    transform: rotate(43deg);
+  }
+  input[type="checkbox"].switch:disabled:not(:checked):after {
+    opacity: 0.6;
+  }
+  input[type="radio"] {
+    border-radius: 50%;
+  }
+  input[type="radio"]:after {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: var(--active-inner);
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  input[type="radio"]:checked:after {
+    background: var(--active-inner);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+/* Flight-Details */
+.progress-bar-top .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  background-color: #d32f2f;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.progress-bar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.progress-bar-top .step-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(151, 161, 166);
+  margin-right: 10px;
+}
+.progress-bar-top .step-line {
+  min-width: 1%;
+  margin-right: 10px;
+  border-bottom: 1px dashed rgb(204, 204, 204);
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+.travel-detail-container .travel-detail-head {
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  background: white;
+  border-width: 1px 1px 0px;
+  border-style: solid solid solid;
+  border-color: rgb(189, 189, 189) rgb(189, 189, 189) rgb(189, 189, 189);
+  -o-border-image: initial;
+  border-image: initial;
+  border-bottom: 0px;
+  padding: 8px 20px;
+}
+.travel-detail-container .travel-detail-head span {
+  font-size: 16px;
+  font-weight: 600;
+}
+.font-size-14 {
+  font-size: 14px;
+}
+
+.travel-detail-container .detail-travels,
+.travel-detail-container .contect-detail,
+.fees-extra-detail,
+.checkin-instruc{
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 20px;
+  border-radius: 2px;
+}
+.detail-rquire .rquire-first,
+.detail-rquire .rquire-secound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.detail-rquire .rquire-first svg {
+  color: rgb(123, 186, 114);
+  margin-right: 6px;
+}
+.detail-rquire .rquire-first p {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(96, 165, 86);
+  width: 100%;
+  padding: 10px;
+  background: rgb(244, 255, 242);
+  margin: 0px;
+}
+.detail-rquire .rquire-secound svg {
+  color: rgb(255, 180, 104);
+  margin-right: 6px;
+}
+.detail-rquire .rquire-secound p {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(236, 152, 68);
+  width: 100%;
+  padding: 10px;
+  background: rgb(255, 249, 240);
+  margin: 0px;
+}
+.travel-detail-container .traveler-details {
+  width: 100%;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+.form-control-custom {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-right: 0px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(73, 80, 87);
+  background-color: rgb(255, 255, 255);
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  background-image: url("../img/arrows+bottom+chevron+direction+down+icon-1320085938044424744.png");
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  -webkit-transition: border-color 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+  -webkit-box-shadow 0.15s ease-in-out 0s;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  background-position: right 0.5em top 50%;
+  background-repeat: no-repeat;
+  padding: 0.5em;
+}
+.form-control-custom:focus {
+  border-color: rgb(54, 101, 172);
+  outline: none;
+}
+.travel-detail-container input:focus {
+  border-color: rgb(54, 101, 172);
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.font-size-12 {
+  font-size: 12px;
+}
+
+.traveler-details #frequent-det {
+  display: none;
+}
+.traveler-details #meal-det {
+  display: none;
+}
+.btn-meal-assistance {
+  margin-right: 8px;
+  width: 23%;
+}
+.btn-meal-assistance:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-meal-assistance:hover {
+  background: rgb(229, 229, 229);
+}
+.btn-meal-assistance.active {
+  color: white;
+  background: #d32f2f;
+}
+#meal-det p {
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 0px;
+  background: rgb(255, 247, 234);
+}
+#meal-det #assistance,
+#meal-det #meal {
+  display: none;
+}
+#meal-det #assistance.active,
+#meal-det #meal.active {
+  display: block;
+}
+.traveler-baggage {
+  cursor: pointer;
+}
+#traveler-bag-info .require-additional {
+  background-color: rgb(248, 248, 248);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(229, 229, 229);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 9px 15px;
+}
+#traveler-bag-info {
+  display: none;
+}
+.detail-aside {
+  padding-bottom: 20px;
+  border-width: 1px;
+  border-style: dashed;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  border-radius: 2px;
+}
+.detail-aside > div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.detail-aside > div:first-child {
+  position: relative;
+  border-bottom: 1px dashed rgb(204, 204, 204);
+}
+.detail-aside > div:first-child::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  bottom: -5px;
+  background: rgb(250, 250, 250);
+  border-width: 1px 1px 0px;
+  border-style: dashed dashed dashed;
+  border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  border-bottom: 0px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: -4px;
+}
+.detail-aside > div:first-child::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  bottom: -5px;
+  background: rgb(250, 250, 250);
+  border-width: 1px 1px 0px;
+  border-style: dashed dashed dashed;
+  border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  border-bottom: 0px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  right: -4px;
+}
+.detail-aside .tax-fare {
+  display: none;
+}
+.detail-aside .btn-select svg {
+  margin-left: 9px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/* hotel Listing */
+
+.hotel-search-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.hotel-search-found {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(119, 119, 119);
+  white-space: nowrap;
+}
+.hr {
+  padding-top: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(223, 223, 223);
+  width: 100%;
+}
+.hotel-search-summary {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(223, 223, 223);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: rgb(250, 250, 250);
+}
+.search-summary-title {
+  color: rgb(58, 58, 58);
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.hotel-modify-btn {
+  color: white;
+  -webkit-box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+  box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+  background: rgb(231, 65, 42);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  min-width: 120px;
+  height: 25px;
+  font-size: 12px;
+  float: right;
+  padding: 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.hotel-modify-btn:hover {
+  background-color: rgb(242, 80, 51);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+}
+.hotel-search-city {
+  border-width: 1px 1px 1px;
+  border-style: none solid solid;
+  border-color: rgb(223, 223, 223) rgb(223, 223, 223) rgb(223, 223, 223);
+  -o-border-image: initial;
+  border-image: initial;
+  border-top: none;
+  padding: 10px;
+  background: white;
+}
+.hotel-search-city span {
+  color: rgb(58, 58, 58);
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.hotel-search-from {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 0px;
+  margin-left: 6px;
+  max-width: 16%;
+  border-width: 1px 1px 1px;
+  border-style: none solid solid;
+  border-color: rgb(223, 223, 223) rgb(223, 223, 223) rgb(223, 223, 223);
+  -o-border-image: initial;
+  border-image: initial;
+  border-top: none;
+  background: white;
+}
+.hotel-search-from span {
+  color: rgb(58, 58, 58);
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.hotel-search-to {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 0px;
+  margin-right: 5.5px;
+  max-width: 16%;
+  border-width: 1px 1px 1px;
+  border-style: none solid solid;
+  border-color: rgb(223, 223, 223) rgb(223, 223, 223) rgb(223, 223, 223);
+  -o-border-image: initial;
+  border-image: initial;
+  border-top: none;
+  background: white;
+}
+.hotel-search-to span {
+  color: rgb(58, 58, 58);
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.hotel-search-room-adult {
+  border-width: 1px 1px 1px;
+  border-style: none solid solid;
+  border-color: rgb(223, 223, 223) rgb(223, 223, 223) rgb(223, 223, 223);
+  -o-border-image: initial;
+  border-image: initial;
+  border-top: none;
+  padding: 10px;
+  background: white;
+}
+.hotel-search-room-adult span {
+  color: rgb(58, 58, 58);
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.hotel-sorting .col-1 > div {
+  color: rgb(58, 58, 58);
+  font-size: 14px;
+  padding: 6px 0px 0px;
+}
+.btn-hotel-sorting {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 600;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgb(242, 80, 51);
+  border-radius: 2px;
+  -o-border-image: initial;
+  border-image: initial;
+  background: rgb(255, 255, 255);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 8px 12px;
+  border: none;
+  width: 193px;
+  margin-left: 8px;
+  -webkit-box-shadow: rgba(2, 100, 122, 0.1) 0px 1px 8px 0px,
+  rgba(0, 0, 0, 0.1) 0px 1px 8px 0px !important;
+  box-shadow: rgba(2, 100, 122, 0.1) 0px 1px 8px 0px,
+  rgba(0, 0, 0, 0.1) 0px 1px 8px 0px !important;
+}
+
+.btn-sorting-tool-tip {
+  position: relative;
+  display: inline-block;
+}
+.btn-sorting-tool-tip svg {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  overflow: hidden;
+}
+.btn-hotel-sorting.active {
+  background: rgb(228, 233, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(242, 80, 51);
+}
+.btn-hotel-sorting:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(242, 80, 51);
+}
+.btn-hotel-sorting:focus {
+  outline: none;
+}
+.hotel-search-result {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  min-height: 246px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(229, 229, 229);
+  -o-border-image: initial;
+  border-image: initial;
+  background: white;
+}
+.hotel-search-img {
+  width: 235px;
+  height: 244px;
+  border-radius: 2px;
+  padding: 3px;
+}
+@media screen and (max-width:1200px){
+  .hotel-search-img{
+    width:100%;
+  }
+}
+.hotel-search-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(58, 58, 58);
+  margin-right: 5px;
+}
+.icon-stars {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.icon-stars svg {
+  color: rgb(255, 207, 102);
+  margin-right: 3px;
+}
+.uncheck {
+  color: rgb(242, 242, 242) !important;
+}
+.proprity-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgb(228, 233, 240);
+  height: 21px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 5px;
+  color: rgb(58, 58, 58);
+  font-weight: 400;
+  font-size: 12px !important;
+  border-radius: 2px;
+  padding: 0px 5px;
+}
+.hotel-address {
+  font-size: 12px;
+  margin-top: 8px;
+  color: rgb(119, 119, 119);
+}
+.hotel-distance {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 5px;
+  color: rgb(51, 51, 51);
+}
+.hotel-distance svg {
+  margin-right: 5px;
+  width: 12px !important;
+  height: 12px !important;
+}
+.hotel-facilities {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 21px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 5px;
+  color: rgb(29, 172, 8);
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 12px !important;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(29, 172, 8);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 0px 5px;
+}
+.rating-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 15px;
+  border-left: 1px solid rgb(229, 229, 229);
+  height: 100%;
+}
+.hotel-rating-review {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(113, 188, 76);
+  margin-right: 10px;
+  line-height: 20px;
+  text-align: right;
+}
+.hotel-guest-review {
+  color: rgb(158, 158, 158);
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 12px !important;
+}
+.hotel-rating-review + div {
+  width: 44px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.hotel-rating-review + div svg {
+  color: rgb(113, 188, 76);
+  width: 100%;
+  height: 100%;
+}
+.hotel-rating-review + div span {
+  position: absolute;
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+  left: 50%;
+  top: 0px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.hotel-price span {
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+  font-size: 18px;
+}
+.hotel-price {
+  text-align: right;
+  margin-top: auto;
+}
+.hotel-stay {
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+}
+.btn-select-room {
+  color: white;
+  -webkit-box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+  box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+  background: rgb(231, 65, 42);
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 600;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 8px 12px;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+}
+.btn-select-room:hover {
+  background-color: rgb(242, 80, 51);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+  rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+}
+.btn-select-room svg {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  float: right;
+  margin-top: 5px;
+  width: 10px !important;
+  height: 10px !important;
+}
+/* Hotel Filter */
+.hotel-map {
+  width: 100%;
+  height: 92px;
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.view-map {
+  color: rgb(242, 80, 51);
+  background-color: white;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  font-size: 15px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(242, 80, 51);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 5px 10px;
+}
+.hotel-filter {
+  background: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(223, 223, 223);
+}
+.filter-title {
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+.hotel-filter-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: rgb(242, 80, 51);
+}
+.hotel-filter-scale {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: -webkit-gradient(
+          linear,
+          left top, right top,
+          from(#d32f2f),
+          color-stop(100%, #d32f2f),
+          color-stop(100%, rgb(234, 234, 234)),
+          to(rgb(234, 234, 234))
+  );
+  background: linear-gradient(
+          to right,
+          #d32f2f 0%,
+          #d32f2f 100%,
+          rgb(234, 234, 234) 100%,
+          rgb(234, 234, 234) 100%
+  );
+}
+.hotel-filter-pointer {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  border-radius: 24px;
+}
+.Price__Wrapper {
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+}
+
+/* hotel Detail */
+.pr-1-px {
+  padding-right: 1px !important;
+}
+.mb-1-px {
+  margin-bottom: 1px !important;
+}
+.hotel-detail-slider {
+  cursor: pointer;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.hotel-gallary-seemore {
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+  font-size: 16px;
+  line-height: 1.78;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  pointer-events: none;
+  padding: 15px 30px;
+}
+.hotel-detail-wrapper {
+  margin-bottom: 15px;
+  background: white;
+  padding: 15px 0px;
+}
+.hotel-detail-nav a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(58, 58, 58);
+  white-space: nowrap;
+  padding: 15px 40px;
+  text-decoration: none;
+}
+.hotel-detail-nav {
+  margin-bottom: 40px;
+}
+.hotel-detail-nav a.active {
+  color: rgb(242, 80, 51);
+  border-bottom: 2px solid rgb(242, 80, 51);
+  font-size: 14px;
+  font-weight: 600;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: none;
+}
+.bc-icons-2 .breadcrumb-item.active {
+  color: #455a64;
+}
+.breadcrumb {
+  background: transparent;
+  font-size: 12px;
+}
+.hotel-detail-rate-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(18, 153, 17);
+}
+.eVgktJ {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.eVgktJ svg {
+  color: rgb(18, 153, 17);
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+.eVgktJ span {
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  left: 50%;
+  top: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.hotel-detail-form {
+  height: 56px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(229, 229, 229);
+  -o-border-image: initial;
+  border-image: initial;
+}
+.hotel-detail-modify {
+  margin-bottom: 35px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  background: white;
+}
+.modiify-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgb(248, 248, 248);
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+.room-section {
+  margin-bottom: 35px;
+}
+.room-section-title {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: rgb(58, 58, 58);
+  margin-bottom: 15px;
+}
+.form-check-room-facility {
+  height: 31px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 8px 0px !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 8px 0px !important;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  background: white;
+}
+.form-check-room-facility label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: normal;
+  line-height: 18px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: rgb(242, 80, 51);
+  padding: 5px 12px 5px 10px;
+}
+.form-check-label.active {
+  background: rgb(228, 233, 240);
+  border: 1px solid rgb(242, 80, 51);
+}
+.form-check-room-facility input[type="checkbox"].form-check-input {
+  opacity: 0;
+  width: 0px;
+  visibility: hidden;
+}
+.line-multi-search {
+  content: "";
+  position: relative;
+  height: 3px;
+  margin-left: 10px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.room-container {
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+.room-type-title{
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 18px 15px;
+  border-width: 1px 1px 1px;
+  border-style: solid solid none;
+  border-color: rgb(211, 211, 211) rgb(211, 211, 211) rgb(211, 211, 211);
+  -o-border-image: initial;
+  border-image: initial;
+  border-bottom: none;
+  background: white;
+}
+.room-items{
+  width: 250px;
+  margin-right: 15px;
+}
+.inner-room{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(211, 211, 211);
+  -o-border-image: initial;
+  border-image: initial;
+  background: white;
+}
+.room-images{
+  position: relative;
+  margin-bottom: 15px;
+  height: 166px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.room-images img{
+  width: 100%;
+  min-height: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+.room-images div{
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  width: 100%;
+  border-radius: 1px;
+  padding: 10px;
+}
+.room-images div span{
+  font-size: 12px;
+  font-weight: normal;
+}
+.room-images div svg{
+  margin-left: 5px;
+}
+.room-bed{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.room-bed span{
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin-right: 4px;
+}
+.room-bed svg{
+  margin-right: 3px;
+  height: 15px;
+}
+.room-bed svg:last-child{
+  margin-right: 0;
+}
+.room-aminities{
+  color: rgb(58, 58, 58);
+  margin-bottom: 10px;
+}
+.room-aminities div{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.room-aminities img{
+  width: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-style: none;
+}
+.room-aminities span{
+  font-size: 12px;
+  font-weight: normal;
+}
+.room-details{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 25px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+.HotelDetails-Room-Option{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(224, 224, 224);
+  -o-border-image: initial;
+  border-image: initial;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+
+}
+.HotelDetails-Room-Option:not(:last-of-type) {
+  border-bottom: none;
+}
+.include-room{
+  -ms-flex-preferred-size: 44%;
+  flex-basis: 44%;
+  max-width: 44%;
+  padding: 15px;
+  border-right: 1px solid rgb(224, 224, 224);
+}
+.room-service-title{
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin-top: -45px;
+  padding-bottom: 25px;
+  margin-left: -15px;
+}
+.include-room-contains{
+  color: rgb(58, 58, 58);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+.include-room-qty{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.room-cancelation-detail{
+  margin-bottom: 15px;
+  padding: 0px;
+  list-style: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+.room-cancelation-detail li{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.room-cancelation-detail li:last-child{
+  margin-bottom: 0;
+}
+.room-cancelation-detail li svg{
+  color: rgb(29, 172, 8);
+  margin-right: 4px;
+  width: 16px;
+}
+.room-cancelation-detail li span{
+  color: rgb(29, 172, 8);
+}
+.room-cancelation-detail li span:not(:last-child) {
+  margin-right: 5px;
+
+}
+.dot{
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 10px;
+  margin-left: 6px;
+  border-radius: 50%;
+  background: rgb(58, 58, 58);
+}
+.room-guest{-ms-flex-preferred-size: 17%;flex-basis: 17%;
+  max-width: 17%;
+  padding: 15px 35px 15px 15px;
+  border-right: 1px solid rgb(224, 224, 224);}
+.room-guest-qty{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgb(58, 58, 58);
+  font-size: 12px;
+  font-weight: 600;
+}
+.room-guest-qty svg{
+  height: 14px;
+  width: 14px;
+  color: rgb(58, 58, 58);
+  margin-right: 5px;
+}
+.total-stay-price{
+  -ms-flex-preferred-size: 17%;
+  flex-basis: 17%;
+  max-width: 17%;
+  padding: 15px 35px 15px 15px;
+  border-right: 1px solid rgb(224, 224, 224);
+}
+.total-stay-price .room-total-price{
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+  font-size: 18px;
+}
+.total-stay-price .room-stay{
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+}
+.room-booknow{
+  -ms-flex-preferred-size: 22%;
+  flex-basis: 22%;
+  padding: 15px 20px;
+}
+.HotelDetails-Room-Option:not(:first-child) .room-service-title {
+  display: none;
+
+}
+.review-section{
+  margin-bottom: 35px;
+}
+.room-review-title{
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: rgb(58, 58, 58);
+  margin-bottom: 30px;
+}
+.room-review-container{
+  background-color: white;
+  padding: 30px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+}
+.room-review-rate{
+  position: relative;
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.room-review-rate svg{
+  color: rgb(18, 153, 17);
+  width: 100%;
+  height: 100%;
+}
+.room-review-rate span{
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  left: 50%;
+  top: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.room-review-text :first-child{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(18, 153, 17);
+}
+.room-review-text:last-child{
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+
+}
+.room-review-container .verified-review svg{
+  color: rgb(93, 184, 89);
+}
+.room-review-container .verified-review svg{
+  color: rgb(93, 184, 89);
+}
+.room-review-container .verified-review span{
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+  margin: 0px 7px;
+}
+.room-review-container .verified-review img{
+  height: 14px;
+  width: auto;
+}
+.review-card{
+  margin-right: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  background-color: white;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 20px;
+}
+.review-card-title{
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin-bottom: 15px;
+}
+.review-card .review-des{
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.67;
+  color: rgb(58, 58, 58);
+}
+.review-card .review-card-badges{
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.review-card .review-card-badges img{
+  width: 30px;
+  height: 34px;
+  margin-right: 10px;
+}
+.review-card  .badge-overall{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.review-card  .badge-overall span:first-child{
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 2px;
+  color: rgb(58, 58, 58);
+}
+.review-card  .badge-overall span:last-child{
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+
+}
+.review-card:last-child{
+  margin-right: 0;
+}
+.review-card .review-card-know{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.review-card .review-card-know svg{
+  margin-right: 12px;
+  color: rgb(89, 186, 84);
+}
+.review-card .review-card-know span{
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(58, 58, 58);
+}
+.guest-review-title{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: rgb(58, 58, 58);
+}
+.guest-review-tabs .nav-item{
+  height: 50px;
+  line-height: 50;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgb(58, 58, 58);
+  padding: 0px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  border-width: 1px 1px 1px;
+  border-style: solid  solid solid;
+  border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 0;
+}
+.guest-review-tabs .nav-item.active{
+  color: rgb(54, 101, 172);
+  -webkit-box-shadow: rgb(54, 101, 172) 0px -3px 0px 0px inset;
+  box-shadow: rgb(54, 101, 172) 0px -3px 0px 0px inset;
+
+}
+.guest-review-tabs .nav-item:not(:last-child){
+  border-right:none
+}
+.review-by{
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(58, 58, 58);
+  margin-bottom: 30px;
+}
+.review-by span{
+  font-weight: 600;
+}
+.review-service-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+  border-bottom: 2px solid rgb(238, 238, 238);
+}
+.review-service-container:last-child{
+  border-bottom: none;
+}
+.review-service-title{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin-bottom: 7px;
+}
+.review-service-scale{
+  position: relative;
+  width: 200px;
+  height: 10px;
+  margin-right: 10px;
+  background: rgb(223, 223, 223);
+  border-radius: 5px;
+}
+.review-service-scale:after{
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 87%;
+  background: rgb(18, 153, 17);
+  border-radius: 5px;
+
+}
+.review-service-rating{
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+}
+.review-service-rating span{
+  color: rgb(58, 58, 58);
+  font-weight: bold;
+}
+.review-bassed-on{
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+}
+.review-description{
+  background-color: rgb(248, 248, 248);
+  margin-left: 20px;
+  border-radius: 1px;
+  padding: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+.review-text{
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.57;
+}
+.review-seemore{
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(54, 101, 172);
+  cursor: pointer;
+}
+.hotel-aminates-section{
+  margin-bottom: 35px;
+}
+.hotel-aminities-title{
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: rgb(58, 58, 58);
+  margin-bottom: 30px;
+}
+.hotel-aminities-container{
+  background-color: white;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 30px 30px 10px;
+}
+.hotel-aminities-top{
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-height: 50px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  overflow: hidden;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.hotel-aminities-top img{
+  height: 22px;
+  width: auto;
+  margin-right: 10px;
+}
+.hotel-aminities-top span{
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  white-space: nowrap;
+}
+.aminities-inner-title{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.aminities-inner-title img{
+  height: 22px;
+  width: auto;
+  margin-right: 6px;
+}
+.aminities-inner-title span{
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+}
+.aminities-inner-sub-data{
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: rgb(119, 119, 119);
+}
+.aminities-inner-sub-data i{
+  margin-right: 8px;
+  font-size: 11px;
+
+}
+.aminities-inner-sub-data span{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.92;
+  margin-right: 5px;
+}
+.badge24,
+.badge-free{
+  height: 17px;
+  line-height: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: rgb(49, 158, 55);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+  align-self: center;
+  white-space: nowrap;
+  font-weight: 600;
+  padding: 0px 3px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(49, 158, 55);
+  -o-border-image: initial;
+  border-image: initial;
+  margin: 1.5px 0px;
+}
+.attractions-section{
+  color: rgb(58, 58, 58);
+  margin-bottom: 35px;
+}
+.attractions-heading{
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: rgb(58, 58, 58);
+  margin-bottom: 30px;
+}
+.attractions-container{
+  background-color: white;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 30px;
+}
+.attraction-title{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px 0px 10px;
+}
+.attraction-points li{
+  font-size: 14px;
+  font-weight: normal;
+  position: relative;
+  padding: 0px;
+  margin: 0px 0px 5px;
+}
+.attraction-points li::before{
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(233, 233, 233);
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.about-hotel{
+  margin-bottom: 35px;
+}
+.about-hotel-heading{
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.33;
+  margin-bottom: 30px;
+}
+.similar-hotels-heading{
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin-bottom: 10px;
+  line-height: 1.75;
+  text-align: center;
+
+}
+.about-hotel-container{
+  background-color: white;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 30px;
+}
+.about-hotel-title{
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px 0px 10px;
+}
+.hotel-about-desc{
+  font-size: 14px;
+  margin: 0px 0px 20px;
+}
+.hotel-about-desc span{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.similar-hotels-sub-heading{
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgb(119, 119, 119);
+  margin-bottom: 30px;
+  text-align: center;}
+.hotel-feature{
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: white;
+  min-height: 420px;
+  color: rgb(58, 58, 58);
+  height: 100%;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 2px;
+}
+.hotel-feature img{
+  height:170px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.feature-cotent{
+  padding:15px
+}
+.feature-cotent .feature-title{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgb(58, 58, 58);
+  margin-bottom: 10px;
+}
+.feature-cotent .feature-overall-rating{
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.feature-cotent .feature-overall-rating svg{
+  color: rgb(113, 188, 76);
+  width: 100%;
+  height: 100%;
+}
+.feature-cotent .feature-overall-rating span{
+  position: absolute;
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+  left: 50%;
+  top: 0px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.feature-cotent .feature-overall-rating strong{
+  color: rgb(113, 188, 76);
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-top: -5px;}
+.feature-cotent .feture-location{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgb(119, 119, 119);
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.feature-cotent .feture-location i{
+  margin-right: 5px;
+  color: inherit;
+  font-size: 12px;
+}
+.feature-cotent .feture-location span{
+  font-size: 12px;
+  font-weight: normal;}
+.feature-price-value{
+  display: block;
+  text-align:right;
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+  font-size: 18px;
+}
+.hotel-modify-back{
+  opacity: 0.5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: black;
+}
+.btn-hotel-modify:focus{
+  border:none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.hide{
+  display:none;
+}
+.guest-title input{
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+.booking-for-else{
+  display:none
+}
+.specialRequest{
+  cursor: pointer;
+}
+.accessible-bathroom input,.Minibar input{
+  opacity: 0;
+  width: 0px !important;
+}
+.accessible-bathroom .form-check-label,.Minibar .Minibar-label{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: normal;
+  line-height: 18px;
+  margin-bottom: 0px;
+  color: #d32f2f;
+  font-size: 12px;
+  padding: 5px 12px 5px 10px;
+  box-shadow: rgba(2, 100, 122, 0.1) 0px 1px 8px 0px, rgba(0, 0, 0, 0.1) 0px 1px 8px 0px !important;
+  border:1px solid transparent
+}
+.btn-visited{
+  background: rgb(242, 242, 242);
+  border: 1px solid #d32f2f !important;
+
+}
+.form-group #other-request{
+  margin-bottom:2px
+}
+.form-group label[for="other-request"]{
+  cursor:pointer
+}
+.other-request-textarea{
+  display:none
+}
+.specialRequestContent{
+  display:none
+}
+.hotel-booking-aside{
+  margin-top:15px;
+  padding-bottom: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+  border-radius: 2px;
+  background: white;
+}
+.aside-heading{
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: rgb(58, 58, 58);
+  border-bottom: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  padding: 10px;
+}
+.aside-content{
+  padding:10px
+}
+.img-title{
+  border-bottom: 1px solid rgb(204, 204, 204);
+
+}
+.img-title .aside-title{
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  line-height: 15px;
+  margin-bottom: 4px;
+
+
+}
+.aside-pass-detail{
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 10px 0;
+}
+.card-price{
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  margin-top: 15px;
+  color: rgb(58, 58, 58);
+  font-size: 12px;
+  padding: 20px;
+  border-top: 2px solid rgb(255, 141, 25);
+  background-color: white;
+  border-radius: 2px;
+}
+.card-Limited{
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+  padding: 20px;
+  border-radius: 2px;
+  margin-top: 15px;
+  color: rgb(58, 58, 58);
+  font-size: 12px;
+  padding: 20px;
+  border-top: 2px solid rgb(89, 146, 232);
+}

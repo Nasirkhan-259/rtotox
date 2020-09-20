@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://TekTravel/HotelBookingApi"><SOAP-ENV:Header/><SOAP-ENV:Body><ns1:HotelRoomAvailabilityRequest><ns1:SessionId>645a0a74-cb85-4bf8-ab4c-7bf35ed3fe1e</ns1:SessionId><ns1:ResultIndex>6</ns1:ResultIndex><ns1:HotelCode>1075091</ns1:HotelCode><ns1:ResponseTime>0</ns1:ResponseTime><ns1:IsCancellationPolicyRequired>false</ns1:IsCancellationPolicyRequired></ns1:HotelRoomAvailabilityRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>

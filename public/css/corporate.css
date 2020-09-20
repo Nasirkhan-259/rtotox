@@ -1,0 +1,12 @@
+.color-red {
+    color: #d32f2f;
+}
+.inside-alert {
+    height: 27px !important;
+    font-size: 12px !important;
+}
+.filter .filter-title {
+    padding-left: 10px;
+    background: #d32f2f;
+    color: #fff !important;
+}

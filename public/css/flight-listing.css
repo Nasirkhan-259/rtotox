@@ -1,0 +1,3088 @@
+body {
+    background-color: rgb(252, 252, 252);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+.loading {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background:#000000d9;
+    color:#fff;
+    text-align: center;
+    top: 0px;
+    padding-top: 15%;
+}
+
+/* main-header */
+
+.main-header {
+    background-image: url(../img/header-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-header .flight-tab,
+.main-header .hotel-tab,
+.main-header .holiday-tab {
+    padding: 13px 40px;
+    margin-right: 1px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px 4px 0px 0px;
+    cursor: pointer;
+    background-color: rgba(216, 213, 213, 0.8);
+}
+.main-header .tab-content {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-header .flight-orign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 46px;
+    border-radius: 4px 4px 0px 0px;
+    overflow: hidden;
+    padding: 0px 10px;
+    background: #fff;
+    margin-bottom: 1px;
+}
+.main-header .search-hotel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 46px;
+    border-radius: 4px 4px 4px 4px;
+    overflow: hidden;
+    padding: 0px 10px;
+    background: #fff;
+    margin-bottom: 1px;
+}
+.main-header .flight-orign svg,
+.main-header .flight-destination svg,
+.main-header .search-hotel svg {
+    width: 17px;
+    height: 17px;
+    color: rgb(158, 158, 158);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.main-header .flight-orign input,
+.main-header .flight-destination input,
+.main-header .search-hotel input {
+    color: rgb(66, 66, 66);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    -o-border-image: initial;
+    border-image: initial;
+    padding: 0px 30px 0px 10px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: inherit;
+}
+.main-header .flight-orign input:focus,
+.main-header .flight-destination input:focus,
+.main-header .search-hotel input:focus {
+    outline: none;
+}
+.main-header .flight-destination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 46px;
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+    padding: 0px 10px;
+    background: #fff;
+}
+.flight-date-picker {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: rgb(66, 66, 66);
+}
+.flight-date-picker > div:first-child {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: -1px;
+    cursor: pointer;
+    height: 93px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    background: white;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+}
+.flight-date-picker > div:first-child svg {
+    position: absolute;
+    color: rgb(66, 66, 66);
+    left: 10px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+}
+.flight-date-picker .spacer,
+.main-header .datepickerhotel .spacer {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: transparent;
+}
+.flight-date-picker > div:last-child {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: -1px;
+    cursor: pointer;
+    height: 93px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    background: white;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+}
+.flight-date-picker .date-picker-to .date-second {
+    position: absolute;
+    color: rgb(66, 66, 66);
+    left: 10px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+}
+.flight-date-picker .date-picker-to .hide-return {
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    color: rgb(54, 101, 172);
+    width: 28px;
+    height: 28px;
+}
+.select-class {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 1px;
+    color: rgb(66, 66, 66);
+    border-radius: 4px 4px 0px 0px;
+    padding: 12px 15px;
+    background: white;
+}
+.select-class svg,
+.select-pessanger svg {
+    width: 13px;
+    height: 13px;
+}
+.select-class span,
+.select-pessanger span {
+    font-size: 15px;
+    color: rgb(66, 66, 66);
+}
+.select-pessanger {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: rgb(66, 66, 66);
+    border-radius: 0px 0px 4px 4px;
+    padding: 12px 15px;
+    background: white;
+}
+.btn-search-md {
+    width: 100%;
+    height: 93px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 15px 0px 0px;
+    color: white;
+    -webkit-box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+    box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+    background: rgb(231, 65, 42);
+    border-style: none;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+}
+.btn-search-md svg {
+    width: 30px;
+    height: 30px;
+    margin: -5px auto 0px;
+}
+.btn-search-md span {
+    margin-top: 10px;
+    font-weight: 600;
+}
+.btn-baggage-box {
+    height: 100%;
+}
+.dsp-inl-flex {
+    display: inline-flex;
+}
+.btn-search-md:hover,
+.btn-search-sm:hover {
+    color: #fff;
+    background-color: rgb(242, 80, 51);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+    rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+    rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+}
+.btn-search-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    -webkit-box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+    box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+    background: rgb(231, 65, 42);
+    border-width: initial;
+    border-style: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .btn-search-sm {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 10px;
+        height: 100%;
+        padding: 10px 0px;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+        border-radius: 4px;
+    }
+}
+.btn-search-sm svg {
+    width: 30px;
+    height: 30px;
+}
+.main-header .datepickerhotel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+}
+.main-header .hotel-check-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+    position: relative;
+    padding-left: 12px;
+    height: 45px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    background: white;
+}
+.main-header .hotel-check-in svg,
+.main-header .hotel-check-out svg {
+    position: absolute;
+    color: rgb(66, 66, 66);
+    left: 5px;
+    top: 13px;
+    width: 17px;
+    height: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    fill: currentcolor;
+}
+.main-header .hotel-check-out {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+    position: relative;
+    padding-left: 12px;
+    height: 45px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    background: white;
+}
+.main-header .hotel-select-person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    height: 45px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0px 15px;
+}
+.main-header .hotel-select-person span {
+    display: inline-block;
+    line-height: 1.6em;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.main-header .hotel-select-person > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: rgb(66, 66, 66);
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+}
+.main-header .hotel-select {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-appearance: menulist-button;
+}
+
+#flight-data .flight-tour {
+    background: transparent;
+    border-radius: 4px;
+    padding: 10px 12px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#flight-data .flight-tour.active {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    padding: 10px 12px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.main-header li.active {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: bold;
+}
+.modify {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+.search-region p,
+.search-dest p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.search-region {
+    margin-right: 40px;
+}
+.search-dest {
+    margin-left: 40px;
+    padding-right: 40px;
+    border-right: 1px solid #eee;
+}
+.modify-depart span,
+.modify-return span,
+.modify-pass span,
+.modify-cabin span {
+    font-size: 12px;
+    color: rgb(169, 169, 169);
+}
+.modify-depart {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.modify-depart p,
+.modify-return p,
+.modify-pass p,
+.modify-cabin p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    margin: 10px 0;
+}
+.filter-result {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.filter-result .btn-depart-data {
+    position: absolute;
+    top: 86px;
+    left: 0px;
+    min-width: 232px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+    background-color: white;
+    z-index: 10;
+    border-radius: 8px;
+    padding: 15px;
+    display: none;
+}
+.filter-result .btn-depart-data .btn-rest,
+.filter-result .btn-depart-data .btn-done,
+.filter-result .data-cheapest .btn-done {
+    color: #d32f2f;
+    cursor: pointer;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    background: none;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+    #hotel-data .row :nth-child(2) {
+        margin: 10px 0;
+    }
+}
+
+.filter-result .btn-depart-data .label-depart-data {
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding-left: 7px;
+    margin-right: 15px;
+    font-size: 14px;
+}
+#hotel-data {
+    padding: 52px 0px 54px;
+}
+#hotel-data,
+#flight-data {
+    display: none;
+}
+#hotel-data.active,
+#flight-data.active {
+    display: block;
+}
+.filter-result .btn-direct .icon-disable {
+    color: #fff;
+    margin-left: 10px;
+    display: none;
+    margin-bottom: 2px;
+}
+.filter-result .btn-depart-data .label-depart-data {
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding-left: 7px;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.filter-result .data-cheapest {
+    position: absolute;
+    top: 20px;
+    margin-top: 5px;
+    right: 0px;
+    min-width: 160px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+    background-color: white;
+    z-index: 10;
+    border-radius: 8px;
+    padding: 15px;
+    display: none;
+}
+.filter-result .data-cheapest .cheapest label,
+.filter-result .data-cheapest .shortest label {
+    color: rgb(58, 58, 58);
+    padding-left: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+.filter-result .btn-depart-data .label-depart-data:hover {
+    color: #d32f2f;
+}
+.filter-result .btn-depart-data .label-depart-data:not(:last-child) {
+    margin-bottom: 10px;
+}
+.modify-pass {
+    padding-left: 40px;
+}
+.modify-cabin {
+    padding-left: 17px;
+}
+.btn-modify {
+    color: white;
+    background: -webkit-gradient(linear, left top, right top, from(#d32f2f), to(#d32f2f)) #d32f2f;
+    background: linear-gradient(to right, #d32f2f, #d32f2f) #d32f2f;
+    border-color: #d32f2f;
+    margin-left: auto;
+    height: 35px;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-weight: 600;
+    padding: 0px 9px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.btn-modify:active {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+}
+.btn-modify:focus {
+    outline: none;
+}
+.filter-result .btn-direct,
+.filter-result .btn-depart {
+    color: rgb(58, 58, 58);
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    -webkit-appearance: button;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.filter-result .btn-direct:focus {
+    background: -webkit-gradient(linear, left top, right top, from(#d32f2f), to(#d32f2f)) #d32f2f;
+    background: linear-gradient(to right, #d32f2f, #d32f2f) #d32f2f;
+}
+.filter-result .btn-direct:active,
+.filter-result .btn-depart:active {
+    background: -webkit-gradient(linear, left top, right top, from(#d32f2f), to(#d32f2f)) #d32f2f;
+    background: linear-gradient(to right, #d32f2f, #d32f2f) #d32f2f;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0px;
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+}
+.filter-result .btn-depart .fa-angle-down {
+    -webkit-transform: translateY(1.2px);
+    transform: translateY(1.2px);
+    color: #d32f2f;
+}
+.filter-result p {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    margin-bottom: 10px;
+}
+.filter-result .fa-exchange-alt {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.filter-result .sort {
+    margin-right: 3px;
+    font-size: 14px;
+    color: rgb(58, 58, 58);
+}
+.filter-result .btn-empty {
+    cursor: pointer;
+    font-style: normal;
+    font-stretch: normal;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background: none;
+    border: none;
+    color: #d32f2f;
+    font: 600 14px system-ui;
+}
+.filter-result button:focus {
+    outline: none;
+}
+.filght-detail {
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+}
+.flight-segment {
+    border-top:1px solid #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.flight-segment:first-child{
+    border:none !important;
+}
+.filght-detail .row {
+    margin: 0;
+}
+.flight-img-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.flight-img-name .flight-name,
+.flight-img-name .flight-code {
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgb(58, 58, 58);
+}
+.depart-time,
+.arival-time {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: rgb(58, 58, 58);
+    margin-bottom: 5px;
+    line-height: 18px;
+}
+.flight-duration .text-direct {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(29, 172, 8);
+}
+.flight-duration {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.img-airline {
+    margin: 7px;
+    max-width: 30px;
+    height: auto;
+}
+
+.line-dashed {
+    border-top: 1px dashed rgb(223, 223, 223);
+    height: 0;
+    width: 80%;
+    margin: auto;
+}
+.flight-duration .flight-duration-time {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+    margin-top: 12px;
+}
+.plane {
+    position: absolute;
+    right: 7px;
+    top: 10px;
+}
+.plane svg {
+    width: 16px;
+    color: rgb(223, 223, 223);
+}
+.flight-bag {
+    position: relative;
+    bottom: 27%;
+}
+.flight-bag a,
+.flight-bag span svg {
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #d32f2f;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.flight-bag a:hover {
+    text-decoration: none;
+}
+.baggage-inc {
+    font-size: 10px;
+    color: rgb(58, 58, 58);
+    font-weight: 400;
+    background: white;
+    border-radius: 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    -o-border-image: initial;
+    border-image: initial;
+    padding: 1px 4px;
+    width: 114px;
+}
+.baggage-inc span svg {
+    width: 11px;
+    height: 11px;
+    margin-right: 2px;
+    color: rgb(29, 172, 8);
+    vertical-align: middle;
+    margin-bottom: 1px;
+}
+.select-flight {
+    border-left: 1px dashed rgb(204, 204, 204);
+    padding: 20px 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (max-width:768px){
+    .select-flight {
+        border-left: none;
+
+    }
+    .flight-bag{
+        padding-left: 15px;
+    }
+    .btn-depart,
+    .btn-direct{
+        font-size: 8px !important;
+        margin-bottom: 0 !important;
+    }
+    .filter-result .fa-exchange-alt,
+    .btn-cheapest,
+    .ShowMoreButton,
+    .filter-result .sort{
+        font-size: 10px !important;
+    }
+
+}
+.select-flight .cur {
+    margin-bottom: -9px;
+    margin-right: 1px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.select-flight .price {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 5px 0px 5px;
+    color: #0b0b0b;
+}
+.select-flight button span svg,
+.flight-detail-bottom button span svg {
+    margin-left: 9px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.btn-select {
+    color: white;
+    -webkit-box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+    box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.25) 0px -2px 0px 0px inset;
+    background: #d32f2f;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    -o-border-image: initial;
+    border-image: initial;
+    cursor: pointer;
+    font-size: 11px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 600;
+    line-height: 1.43;
+    letter-spacing: normal;
+    border-radius: 2px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    padding: 8px 12px;
+}
+.btn-select:hover {
+    background-color: #e63535;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+    rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 6px 0px,
+    rgba(0, 0, 0, 0.25) 0px -2px 2px 0px inset;
+}
+.btn-select:focus {
+    outline: none;
+}
+.btn-select:active {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.filght-detail > .row > .col-md-4 {
+    padding-left: 0;
+}
+
+.flight-detail {
+    /*border-left: 1px solid rgb(204, 204, 204);*/
+    /*border-right: 1px solid rgb(204, 204, 204);*/
+    /*border-bottom: 1px solid rgb(204, 204, 204);*/
+}
+
+.more-option-detail {
+    border-top: solid 1px #bbb;
+    border-bottom: solid 1px #bbb;
+    background: #f2f2f2;
+}
+
+.flight-option {
+    border-bottom: solid 1px #fff;
+}
+
+.flight-detail .flight-detail-top {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    background-color: rgb(242, 242, 242);
+}
+.flight-detail .btn-flight-detail.active {
+    margin-right: 13px;
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-width: initial;
+    border-style: initial;
+    border-color: #d32f2f;
+    -o-border-image: initial;
+    border-image: initial;
+    background: #d32f2f;
+    outline: none;
+    color: white;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.flight-detail .btn-flight-detail {
+    color: rgb(58, 58, 58);
+    margin-right: 13px;
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    -o-border-image: initial;
+    border-image: initial;
+    background: none;
+    outline: none;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.flight-detail .btn-flight-detail:active {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    color: #000;
+    border-color: #d32f2f;
+    background: #d32f2f;
+}
+.flight-detail-btn {
+    font-size: 12px;
+    margin-right: 10px;
+}
+.flight-detail-btn:active {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+}
+.ShowMoreButton{
+    min-width: 100px;
+    position: relative;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(54, 101, 172);
+    display: block;
+    cursor: pointer;
+    margin: 0px auto;
+    background: white;
+    padding: 2px 18px;
+    border-width: 1px 1px 1px;
+    border-style: none solid solid;
+    border-color: rgb(236, 236, 236) rgb(236, 236, 236) rgb(236, 236, 236);
+    border-image: initial;
+    transition: width 0.2s ease-in-out 0s;
+    border-top: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+.ShowMoreButton:focus{
+    outline: none;
+
+}
+
+.more-options {
+    background-color: #e8e8e8;
+}
+
+.fhKRnQ {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid transparent;
+    left: -6px;
+    top: -1px;
+    border-right: 8px solid rgb(236, 236, 236);
+}
+.fhKRnQ div {
+    left: 2px;
+    top: 1px;
+    border-right: 8px solid white;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid transparent;
+}
+
+.koPXNF, .koPXNF > div {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid transparent;
+}
+.koPXNF {
+    right: -6px;
+    top: -1px;
+    border-left: 8px solid rgb(236, 236, 236);
+}
+.FlightSearchResult {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgb(228, 232, 237);
+}
+.koPXNF div {
+    right: 2px;
+    top: 1px;
+    border-left: 8px solid white;
+}
+.FlightSearchResult .depart svg {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0px 15px;
+}
+.FlightSearchResult .depart span {
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+}
+.FlightSearchResult .durantion-time {
+    padding-left: 3px;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(58, 58, 58);
+}
+.FlightSearchResult .durantion-time span {
+    font-weight: bold;
+}
+#Flight-itinerary,
+#Baggage-info,
+#Fare-rules {
+    display: none;
+}
+#Flight-itinerary.active {
+    display: block;
+}
+.flight-detail .aircraft-det {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.aircraft-det div {
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.flight-detail .Flight-itinerary-orign span,
+.flight-detail .Flight-itinerary-dest span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.flight-detail .Flight-itinerary-orign-airp {
+    font-weight: 600 !important;
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.flight-detail .Flight-itinerary-orign p,
+.flight-detail .Flight-itinerary-dest p {
+    font-size: 12px;
+}
+.flight-detail .Flight-itinerary-orign,
+.flight-detail .Flight-itinerary-dest {
+    padding-right: 25px;
+}
+.flight-detail .Flight-itinerary-dur span {
+    color: rgb(58, 58, 58);
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+}
+.flight-detail .waiting-time {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    z-index: 1;
+    background-color: rgb(255, 245, 227);
+    padding: 7px 15px;
+}
+.flight-detail .waiting-time svg {
+    margin-right: 10px;
+}
+.flight-detail-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid rgb(228, 232, 237);
+    padding: 15px;
+}
+.flight-detail-bottom .btn-hide-detail,
+.flight-detail-bottom .modal-hide {
+    min-width: 197px;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 600;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d32f2f;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d32f2f;
+    -o-border-image: initial;
+    border-image: initial;
+    background: rgb(255, 255, 255);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    padding: 8px 12px;
+}
+.flight-detail-bottom .btn-hide-detail:focus,
+.flight-detail-bottom .modal-hide:focus {
+    outline: none;
+}
+.flight-detail-bottom .btn-hide-detail:hover,
+.flight-detail-bottom .modal-hide:hover {
+    color: #d32f2f;
+    background-color: rgb(245, 245, 245);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d32f2f;
+    -o-border-image: initial;
+    border-image: initial;
+}
+.flight-detail-bottom .btn-hide-detail:active,
+.flight-detail-bottom .modal-hide:active {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+}
+#Baggage-info .baggage-origin-dest {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+}
+.cabin-baggage,
+.checked-baggage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.cabin-baggage .baggage-for,
+.checked-baggage .baggage-for {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(58, 58, 58);
+}
+.cabin-baggage .max-baggage,
+.checked-baggage .max-baggage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.cabin-baggage .max-baggage .wait,
+.checked-baggage .max-baggage .wait {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    margin-right: 10px;
+}
+.cabin-baggage .max-baggage .freetag,
+.checked-baggage .max-baggage .freetag {
+    background-color: rgb(96, 165, 86);
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    border-radius: 2px;
+    padding: 0px 4px;
+}
+
+.filter-active {
+    background: #d32f2f;
+    color: #fff !important;
+}
+.filter-active svg {
+    color: #fff !important;
+}
+
+.Fare-rules {
+    margin-top: 18px;
+    margin-bottom: 18px;.
+}
+ .fare-total {
+    padding-right: 73px;
+    min-height: 382px;
+    border-right: 1px solid rgb(228, 232, 237);
+ }
+.fare-total .fare-heading {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+.fare-total .fare {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(58, 58, 58);
+    margin-bottom: 10px;
+}
+ .fare-total .tax-fees {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(58, 58, 58);
+    margin-bottom: 10px;
+}
+ .fare-total .vat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(58, 58, 58);
+    margin-bottom: 10px;
+}
+ .fare-total .total-fare {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(228, 232, 237);
+}
+.cancelation {
+    padding-left: 15px;
+}
+ .cancelation .cancel-caharge {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+ .cancelation .cancel-detail {
+    background-color: rgb(248, 248, 248);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    line-height: 1.54;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    -o-border-image: initial;
+    border-image: initial;
+}
+ .cancelation .cancel-detail .cancel-phone,
+ .cancelation .cancel-detail .cancel-mail {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    color: #d32f2f;
+}
+/*****************
+        filter
+ ****************** */
+.filter .filter-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    padding-bottom: 11px;
+    padding-top: 27px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+.filter .filter-box-heading .price,
+.filter .filter-box-heading .stop,
+.filter .filter-box-heading .out-in,
+.filter .filter-box-heading .airports {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+.filter .filter-rest {
+    color: white;
+    background: -webkit-gradient(linear, left top, right top, from(#d32f2f), to(#d32f2f)) #d32f2f;
+    background: linear-gradient(to right, #d32f2f, #d32f2f) #d32f2f;
+    border-color: #d32f2f;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 0px 10px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 600;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    cursor: pointer;
+}
+.filter svg {
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #d32f2f;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.filter .filter-box-content {
+    padding-top: 19px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+.filter .filter-box-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.filter .price-range .price-scale {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: -webkit-gradient(
+            linear,
+            left top, right top,
+            from(#d32f2f),
+            color-stop(100%, #d32f2f),
+            color-stop(100%, rgb(234, 234, 234)),
+            to(rgb(234, 234, 234))
+    );
+    background: linear-gradient(
+            to right,
+            #d32f2f 0%,
+            #d32f2f 100%,
+            rgb(234, 234, 234) 100%,
+            rgb(234, 234, 234) 100%
+    );
+}
+.filter .price-range .price-scale::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    -o-border-image: initial;
+    border-image: initial;
+    border-radius: 24px;
+    right: 0;
+    bottom: -9px;
+}
+.filter .price-range {
+    margin-top: 15px;
+    margin-bottom: 19px;
+}
+.filter .price-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-top: 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(119, 119, 119);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.filter .filter-box-content .direct-stop {
+    margin-top: 15px;
+    margin-bottom: 19px;
+}
+.filter .filter-box-content .direct-stop label {
+    padding-left: 5px;
+    cursor: pointer;
+}
+.filter .filter-box-content .out-in-box {
+    margin-top: 15px;
+    margin-bottom: 19px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.filter .filter-box-content .out-in-box .out-in-element {
+    width: 25%;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    -o-border-image: initial;
+    border-image: initial;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 1;
+    color: #d32f2f;
+}
+.filter .filter-box-content .out-in-box .out-in-element .icon-out-in {
+    width: 16px;
+    margin-bottom: 11px;
+}
+.filter .filter-box-content .filter-airport,
+.filter .filter-box-content .filter-airline {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    margin-bottom: 10px;
+    margin-top: 15px;
+    text-align: left;
+}
+.filter .filter-box-content .filter-airport .filter-airport-check,
+.filter .filter-box-content .filter-airline .filter-airline-check {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.filter .filter-box-content .filter-airport .filter-airport-check label,
+.filter .filter-box-content .filter-airline .filter-airline-check label {
+    cursor: pointer;
+    font-weight: normal;
+    line-height: 18px;
+    font-size: 12px;
+    color: rgb(58, 58, 58);
+    margin-bottom: 0px;
+    float: right;
+    width: 90%;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    input[type="checkbox"],
+    input[type="radio"] {
+        --active: #d32f2f;
+        --active-inner: #fff;
+        --input-border: #cdd9ed;
+        --input-border-hover: #23c4f8;
+        --background: #fff;
+        --disabled: #f5f9ff;
+        --disabled-inner: #e4ecfa;
+        --shadow-inner: rgba(18, 22, 33, 0.1);
+        position: relative;
+        height: 18px;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        margin: 0;
+        padding: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        cursor: pointer;
+        border: 1px solid var(--input-border);
+        background: var(--background);
+        -webkit-transition: background 0.3s ease, border-color 0.3s ease;
+        transition: background 0.3s ease, border-color 0.3s ease;
+    }
+    input[type="checkbox"]:after,
+    input[type="radio"]:after {
+        content: "";
+        display: block;
+        top: -1.5156px;
+        left: -1.5156px;
+        position: absolute;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease,
+        -webkit-filter 0.3s ease;
+        -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: opacity 0.2s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.2s ease, filter 0.3s ease,
+        -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+    }
+    input[type="checkbox"]:checked,
+    input[type="radio"]:checked {
+        background: var(--active);
+        border-color: var(--active);
+    }
+    input[type="checkbox"]:checked:after,
+    input[type="radio"]:checked:after {
+        -webkit-filter: drop-shadow(0 1px 2px var(--shadow-inner));
+        filter: drop-shadow(0 1px 2px var(--shadow-inner));
+        -webkit-transition: opacity 0.3s ease, -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2), -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+        transition: opacity 0.3s ease, filter 0.3s ease,
+        transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2),
+        -webkit-filter 0.3s ease,
+        -webkit-transform 0.6s cubic-bezier(0.175, 0.88, 0.32, 1.2);
+    }
+    input[type="checkbox"]:disabled,
+    input[type="radio"]:disabled {
+        cursor: not-allowed;
+        opacity: 0.9;
+        background: var(--disabled);
+    }
+
+    input[type="checkbox"]:not(.switch),
+    input[type="radio"]:not(.switch) {
+        width: 18px;
+        top: 5px;
+    }
+    input[type="checkbox"]:not(.switch):after,
+    input[type="radio"]:not(.switch):after {
+        opacity: 0;
+    }
+    input[type="checkbox"]:not(.switch):checked:after,
+    input[type="radio"]:not(.switch):checked:after {
+        opacity: 1;
+    }
+
+    input[type="checkbox"]:not(.switch):after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 6px;
+        top: 2px;
+        -webkit-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+    input[type="checkbox"]:not(.switch):checked:after {
+        -webkit-transform: rotate(43deg);
+        transform: rotate(43deg);
+    }
+    input[type="checkbox"].switch:disabled:not(:checked):after {
+        opacity: 0.6;
+    }
+    input[type="radio"] {
+        border-radius: 50%;
+    }
+    input[type="radio"]:after {
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        background: var(--active-inner);
+        opacity: 0;
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+    input[type="radio"]:checked:after {
+        background: var(--active-inner);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+}
+/* Flight-Details */
+.progress-bar-top .step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background-color: #d32f2f;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.progress-bar-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.progress-bar-top .step-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(151, 161, 166);
+    margin-right: 10px;
+}
+.progress-bar-top .step-line {
+    min-width: 1%;
+    margin-right: 10px;
+    border-bottom: 1px dashed rgb(204, 204, 204);
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+}
+.travel-detail-container .travel-detail-head {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    background: white;
+    border-width: 1px 1px 0px;
+    border-style: solid solid solid;
+    border-color: rgb(189, 189, 189) rgb(189, 189, 189) rgb(189, 189, 189);
+    -o-border-image: initial;
+    border-image: initial;
+    border-bottom: 0px;
+    padding: 8px 20px;
+}
+.travel-detail-container .travel-detail-head span {
+    font-size: 16px;
+    font-weight: 600;
+}
+.font-size-14 {
+    font-size: 14px;
+}
+
+.travel-detail-container .detail-travels,
+.travel-detail-container .contect-detail {
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    -o-border-image: initial;
+    border-image: initial;
+    padding: 20px;
+    border-radius: 2px;
+}
+.detail-rquire .rquire-first,
+.detail-rquire .rquire-secound {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.detail-rquire .rquire-first svg {
+    color: rgb(123, 186, 114);
+    margin-right: 6px;
+}
+.detail-rquire .rquire-first p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(96, 165, 86);
+    width: 100%;
+    padding: 10px;
+    background: rgb(244, 255, 242);
+    margin: 0px;
+}
+.detail-rquire .rquire-secound svg {
+    color: rgb(255, 180, 104);
+    margin-right: 6px;
+}
+.detail-rquire .rquire-secound p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(236, 152, 68);
+    width: 100%;
+    padding: 10px;
+    background: rgb(255, 249, 240);
+    margin: 0px;
+}
+.travel-detail-container .traveler-details {
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+.form-control-custom {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-right: 0px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(73, 80, 87);
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    background-image: url("../img/arrows+bottom+chevron+direction+down+icon-1320085938044424744.png");
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    -webkit-transition: border-color 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    -o-border-image: initial;
+    border-image: initial;
+    background-position: right 0.5em top 50%;
+    background-repeat: no-repeat;
+    padding: 0.5em;
+}
+.form-control-custom:focus {
+    border-color: rgb(54, 101, 172);
+    outline: none;
+}
+.travel-detail-container input:focus {
+    border-color: rgb(54, 101, 172);
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.font-size-12 {
+    font-size: 12px;
+}
+
+.traveler-details #frequent-det {
+    display: none;
+}
+.traveler-details #meal-det {
+    display: none;
+}
+.btn-meal-assistance {
+    margin-right: 8px;
+    width: 23%;
+}
+.btn-meal-assistance:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btn-meal-assistance:hover {
+    background: rgb(229, 229, 229);
+}
+.btn-meal-assistance.active {
+    color: white;
+    background: #d32f2f;
+}
+#meal-det p {
+    color: rgb(58, 58, 58);
+    font-weight: 600;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 0px;
+    background: rgb(255, 247, 234);
+}
+#meal-det #assistance,
+#meal-det #meal {
+    display: none;
+}
+#meal-det #assistance.active,
+#meal-det #meal.active {
+    display: block;
+}
+.traveler-baggage {
+    cursor: pointer;
+}
+#traveler-bag-info .require-additional {
+    background-color: rgb(248, 248, 248);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    -o-border-image: initial;
+    border-image: initial;
+    padding: 9px 15px;
+}
+#traveler-bag-info {
+    display: none;
+}
+.detail-aside {
+    padding-bottom: 20px;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: rgb(204, 204, 204);
+    -o-border-image: initial;
+    border-image: initial;
+    border-radius: 2px;
+}
+.detail-aside > div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.detail-aside > div:first-child {
+    position: relative;
+    border-bottom: 1px dashed rgb(204, 204, 204);
+}
+.detail-aside > div:first-child::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    bottom: -5px;
+    background: rgb(250, 250, 250);
+    border-width: 1px 1px 0px;
+    border-style: dashed dashed dashed;
+    border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(204, 204, 204);
+    -o-border-image: initial;
+    border-image: initial;
+    border-bottom: 0px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    left: -4px;
+}
+.detail-aside > div:first-child::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    bottom: -5px;
+    background: rgb(250, 250, 250);
+    border-width: 1px 1px 0px;
+    border-style: dashed dashed dashed;
+    border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(204, 204, 204);
+    -o-border-image: initial;
+    border-image: initial;
+    border-bottom: 0px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    right: -4px;
+}
+.detail-aside .tax-fare {
+    display: none;
+}
+.detail-aside .btn-select svg {
+    margin-left: 9px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+/*! nouislider - 14.0.3 - 10/10/2019 */
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,
+.noUi-target * {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.noUi-target {
+    position: relative;
+    direction: ltr;
+    z-index: 0;
+}
+.noUi-base,
+.noUi-connects {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+/* Wrapper for all connect elements.
+ */
+.noUi-connects {
+    overflow: hidden;
+    z-index: 0;
+}
+.noUi-connect,
+.noUi-origin {
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform-style: preserve-3d;
+    transform-origin: 0 0;
+    transform-style: flat;
+}
+.noUi-connect {
+    height: 100%;
+    width: 100%;
+}
+.noUi-origin {
+    height: 10%;
+    width: 10%;
+}
+/* Offset direction
+ */
+html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
+    left: auto;
+    right: 0;
+}
+/* Give origins 0 height/width so they don't interfere with clicking the
+ * connect elements.
+ */
+.noUi-vertical .noUi-origin {
+    width: 0;
+}
+.noUi-horizontal .noUi-origin {
+    height: 0;
+}
+.noUi-handle {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.noUi-touch-area {
+    height: 100%;
+    width: 100%;
+}
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+}
+.noUi-state-drag * {
+    cursor: inherit !important;
+}
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+    height: 18px;
+}
+.noUi-horizontal .noUi-handle {
+    width: 34px;
+    height: 28px;
+    left: -17px;
+    top: -6px;
+}
+.noUi-vertical {
+    width: 18px;
+}
+.noUi-vertical .noUi-handle {
+    width: 28px;
+    height: 34px;
+    left: -6px;
+    top: -17px;
+}
+html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+    right: -17px;
+    left: auto;
+}
+/* Styling;
+ * Giving the connect element a border radius causes issues with using transform: scale
+ */
+.noUi-target {
+    background: #FAFAFA;
+    border-radius: 4px;
+    border: 1px solid #D3D3D3;
+    box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+}
+.noUi-connects {
+    border-radius: 3px;
+}
+.noUi-connect {
+    background: #3FB8AF;
+}
+/* Handles and cursors;
+ */
+.noUi-draggable {
+    cursor: ew-resize;
+}
+.noUi-vertical .noUi-draggable {
+    cursor: ns-resize;
+}
+.noUi-handle {
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    background: #FFF;
+    cursor: default;
+    box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
+}
+.noUi-active {
+    box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
+}
+/* Handle stripes;
+ */
+.noUi-handle:before,
+.noUi-handle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 14px;
+    width: 1px;
+    background: #E8E7E6;
+    left: 14px;
+    top: 6px;
+}
+.noUi-handle:after {
+    left: 17px;
+}
+.noUi-vertical .noUi-handle:before,
+.noUi-vertical .noUi-handle:after {
+    width: 14px;
+    height: 1px;
+    left: 6px;
+    top: 14px;
+}
+.noUi-vertical .noUi-handle:after {
+    top: 17px;
+}
+/* Disabled state;
+ */
+[disabled] .noUi-connect {
+    background: #B8B8B8;
+}
+[disabled].noUi-target,
+[disabled].noUi-handle,
+[disabled] .noUi-handle {
+    cursor: not-allowed;
+}
+/* Base;
+ *
+ */
+.noUi-pips,
+.noUi-pips * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.noUi-pips {
+    position: absolute;
+    color: #999;
+}
+/* Values;
+ *
+ */
+.noUi-value {
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+}
+.noUi-value-sub {
+    color: #ccc;
+    font-size: 10px;
+}
+/* Markings;
+ *
+ */
+.noUi-marker {
+    position: absolute;
+    background: #CCC;
+}
+.noUi-marker-sub {
+    background: #AAA;
+}
+.noUi-marker-large {
+    background: #AAA;
+}
+/* Horizontal layout;
+ *
+ */
+.noUi-pips-horizontal {
+    padding: 10px 0;
+    height: 80px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+.noUi-value-horizontal {
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+}
+.noUi-rtl .noUi-value-horizontal {
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+}
+.noUi-marker-horizontal.noUi-marker {
+    margin-left: -1px;
+    width: 2px;
+    height: 5px;
+}
+.noUi-marker-horizontal.noUi-marker-sub {
+    height: 10px;
+}
+.noUi-marker-horizontal.noUi-marker-large {
+    height: 15px;
+}
+/* Vertical layout;
+ *
+ */
+.noUi-pips-vertical {
+    padding: 0 10px;
+    height: 100%;
+    top: 0;
+    left: 100%;
+}
+.noUi-value-vertical {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding-left: 25px;
+}
+.noUi-rtl .noUi-value-vertical {
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+}
+.noUi-marker-vertical.noUi-marker {
+    width: 5px;
+    height: 2px;
+    margin-top: -1px;
+}
+.noUi-marker-vertical.noUi-marker-sub {
+    width: 10px;
+}
+.noUi-marker-vertical.noUi-marker-large {
+    width: 15px;
+}
+.noUi-tooltip {
+    display: block;
+    position: absolute;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+.noUi-horizontal .noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 120%;
+}
+.noUi-vertical .noUi-tooltip {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 120%;
+}
+
+.noUi-target{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    border: none;
+    background: linear-gradient( to right, #d32f2f 0%, #d32f2f 100%, rgb(234, 234, 234) 100%, rgb(234, 234, 234) 100% );
+}
+
+.noUi-horizontal .noUi-handle{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    -o-border-image: initial;
+    border-image: initial;
+    border-radius: 24px;
+    right: 0;
+    bottom: -9px;
+}
+.noUi-horizontal .noUi-handle{
+    top:-8px;
+}
+.noUi-horizontal .noUi-handle:focus{
+    outline: none;
+}
+.noUi-horizontal .noUi-handle::after{
+    content:none;
+}
+.noUi-horizontal .noUi-handle::before{
+    content:none;
+}
+/* end nouislider */

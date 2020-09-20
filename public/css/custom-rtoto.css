@@ -1,0 +1,116 @@
+ 
+ .tableflights {
+   border-color: #fff !important;
+   border-top-color: #fff !important;
+   border-right-color: #fff !important;
+   border-bottom-color: #fff !important;
+   border-left-color: #fff !important;
+ }
+
+ .tablefilterhead {
+   font-weight: normal;
+   font-size: 15px !important;
+   margin: 0 0 0px 0;
+   text-transform: uppercase;
+   padding: 14px;
+   color: #fff !important;
+   text-decoration: none !important;
+   border: 0px solid #000000;
+   background: #d32f2f;
+ }
+
+ .pull-right {
+   float: right;
+ }
+
+ .modify-button {
+   background-color: #fff;
+   color: #d32f2f;
+   border: 2px solid #d32f2f;
+   border-radius: 3px;
+   text-decoration: none;
+   display: block;
+   padding: 5px;
+   line-height: 20px;
+   text-align: center;
+   font-size: 13px;
+   font-weight: bold;
+ }
+
+ .strikethrough {
+   position: relative;
+ }
+
+ .strikethrough:before {
+   position: absolute;
+   content: "";
+   left: 0;
+   top: 50%;
+   right: 0;
+   border-top: 1px solid;
+   border-color: inherit;
+   -webkit-transform: rotate(-5deg);
+   -moz-transform: rotate(-5deg);
+   -ms-transform: rotate(-5deg);
+   -o-transform: rotate(-5deg);
+   transform: rotate(-5deg);
+ }
+
+ .label-dark {
+   display: inline;
+   padding: .2em .6em .3em;
+   font-size: 75%;
+   font-weight: 700;
+   line-height: 1;
+   color: #fff;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: baseline;
+   border-radius: .25em;
+   background: #555 !important;
+ }
+
+ .label-blue {
+   display: inline;
+   padding: .2em .6em .3em;
+   font-size: 75%;
+   font-weight: 700;
+   line-height: 1;
+   color: #fff;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: baseline;
+   border-radius: .25em;
+   background: #5bc0de !important;
+ }
+
+ .label-light {
+   display: inline;
+   font-size: 75%;
+   font-weight: 700;
+   line-height: 1;
+   color: #000;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: baseline;
+   border-radius: .25em;
+   background: #f8f8e2 !important;
+ }
+
+ .small {
+   font-size: 12px;
+ }
+
+ .tablereset {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+
+ .hotelimg {
+   width: 207px;
+   height: 200px;
+ }
+
+ .star {
+   color: #e69c0f;
+ }
